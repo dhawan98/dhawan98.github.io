@@ -63,6 +63,16 @@ const experiences: ExperienceProps[] = [
       'Collaborated with international teams to deploy cutting-edge AI techniques.'
     ],
     icon: <FaRobot className="text-white" />
+  },
+  {
+    role: 'Research Intern',
+    company: 'Space Applications Center - Indian Space Research Organization (SAC-ISRO), India',
+    year: '2021',
+    description: [
+      'Optimized AI models for humanoid robotics and computer vision applications.',
+      'Collaborated with international teams to deploy cutting-edge AI techniques.'
+    ],
+    icon: <FaRobot className="text-white" />
   }
 ]
 

@@ -114,7 +114,7 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <AnimatedSection id="projects" title="Research Projects" staggered={true}>
+    <AnimatedSection id="projects" title="Projects" staggered={true}>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
