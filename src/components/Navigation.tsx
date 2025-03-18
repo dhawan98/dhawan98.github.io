@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
+import ThemeToggle from './ThemeToggle';
 
 const Navigation: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -46,7 +47,7 @@ const Navigation: React.FC = () => {
         </a>
         
         {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex items-center space-x-8">
           {[
             { name: 'Bio', id: 'bio' },
             { name: 'Projects', id: 'projects' },
@@ -65,16 +66,20 @@ const Navigation: React.FC = () => {
               {item.name}
             </a>
           ))}
+          <ThemeToggle />
         </div>
         
         {/* Mobile menu button */}
-        <button 
-          className="md:hidden focus:outline-none" 
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center gap-4">
+          <ThemeToggle />
+          <button 
+            className="focus:outline-none" 
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
       
       {/* Mobile Navigation */}
