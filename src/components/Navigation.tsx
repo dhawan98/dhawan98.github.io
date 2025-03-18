@@ -51,6 +51,7 @@ const Navigation: React.FC = () => {
           {[
             { name: 'Bio', id: 'bio' },
             { name: 'Experience', id: 'experience' },
+            { name: 'Skills', id: 'skills' },
             { name: 'Projects', id: 'projects' },
             { name: 'Publications', id: 'publications' },
             { name: 'Open Source', id: 'opensource' },

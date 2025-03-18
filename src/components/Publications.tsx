@@ -9,7 +9,7 @@ interface PublicationProps {
   authors: string;
   conference: string;
   year: string;
-  abstract: string;
+  abstract?: string;
   paperUrl?: string;
   articleUrl?: string;
   codeUrl?: string;

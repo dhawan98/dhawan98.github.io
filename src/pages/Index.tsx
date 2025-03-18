@@ -9,6 +9,8 @@ import OpenSource from '@/components/OpenSource';
 import SocialLinks from '@/components/SocialLinks';
 import ResumeCTA from '@/components/ResumeCTA';
 import Experience from "@/components/Experience";
+import Skills from '@/components/Skills';
+
 
 
 const Index = () => {
@@ -57,6 +59,8 @@ const Index = () => {
       <Bio />
       <div className="section-divider" />
       <Experience />
+      <div className="section-divider" />
+      <Skills />
       <div className="section-divider" />
       <Projects />
       <div className="section-divider" />
