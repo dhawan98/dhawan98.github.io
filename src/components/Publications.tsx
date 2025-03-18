@@ -11,6 +11,7 @@ interface PublicationProps {
   year: string;
   abstract: string;
   paperUrl?: string;
+  articleUrl?: string;
   codeUrl?: string;
   className?: string;
 }
@@ -22,6 +23,7 @@ const Publication: React.FC<PublicationProps> = ({
   year,
   abstract,
   paperUrl,
+  articleUrl,
   codeUrl,
   className
 }) => {
@@ -72,6 +74,19 @@ const Publication: React.FC<PublicationProps> = ({
             <span>Read Paper</span>
           </a>
         )}
+
+        {articleUrl && (
+          <a 
+            href={articleUrl} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-sm hover-underline"
+            aria-label={`Read Article: ${title}`}
+          >
+            <FileText size={16} />
+            <span>Read Paper</span>
+          </a>
+        )}
         
         {codeUrl && (
           <a 
@@ -93,35 +108,54 @@ const Publication: React.FC<PublicationProps> = ({
 const Publications: React.FC = () => {
   const publications = [
     {
-      title: "Vision-Language Models for Medical Image Understanding: A Survey",
-      authors: "Doe, J., Smith, A., Johnson, B.",
-      conference: "Conference on Neural Information Processing Systems (NeurIPS)",
-      year: "2023",
-      abstract: "This paper presents a comprehensive survey of vision-language models applied to medical image understanding. We review recent advances in multimodal learning that combine visual features from medical images with textual information from clinical reports. Our analysis covers architectural innovations, training strategies, and benchmark performances across various medical imaging domains including radiology, pathology, and dermatology.",
-      paperUrl: "https://arxiv.org/abs/example",
-      codeUrl: "https://github.com/yourusername/med-vlm-survey"
+      title: "Post Processing of Image Segmentation using Conditional Random Fields",
+      authors: "Aashish Dhawan; Pankaj Bodani; Vishal Garg",
+      conference: "International Conference on Computing for Sustainable Global Development (INDIACom)",
+      year: "2019",
+      abstract: "The output of image the segmentation process is usually not very clear due to low quality features of Satellite images. The purpose of this study is to find a suitable Conditional Random Field (CRF) to achieve better clarity in a segmented image. We started with different types of CRFs and studied them as to why they are or are not suitable for our purpose. We evaluated our approach on two different datasets - Satellite imagery having low quality features and high quality Aerial photographs. During the study we experimented with various CRFs to find which CRF gives the best results on images and compared our results on these datasets to show the pitfalls and potentials of different approaches.",
+      paperUrl: "https://ieeexplore.ieee.org/document/8991232",
+      codeUrl: "https://github.com/dhawan98/Post-Processing-of-Image-Segmentation-using-CRF"
     },
     {
-      title: "Self-Supervised Contrastive Learning for Cross-Modal Representation in Scientific Documents",
-      authors: "Doe, J., Wang, L., Kumar, P., Chen, S.",
-      conference: "International Conference on Machine Learning (ICML)",
-      year: "2022",
-      abstract: "We propose a novel self-supervised contrastive learning framework for learning joint representations of text and figures in scientific publications. Our approach leverages the natural co-occurrence of figures and their captions to learn representations that capture the semantic relationships between modalities without requiring manual annotations. Experiments on scientific document understanding tasks demonstrate significant improvements over unimodal and existing multimodal approaches.",
-      paperUrl: "https://arxiv.org/abs/example2",
-      codeUrl: "https://github.com/yourusername/scientific-contrastive"
+      title: "A Review on Domain Adaptation and Generative Adversarial Networks",
+      authors: "Aashish Dhawan; Divyanshu Mudgal; Vishal Garg; Tajinder Kumar",
+      conference: "National Conference on Frontiers of Science, Technology and Management (NCFSTM-2020), India",
+      year: "2020",
+      //abstract: "The output of image the segmentation process is usually not very clear due to low quality features of Satellite images. The purpose of this study is to find a suitable Conditional Random Field (CRF) to achieve better clarity in a segmented image. We started with different types of CRFs and studied them as to why they are or are not suitable for our purpose. We evaluated our approach on two different datasets - Satellite imagery having low quality features and high quality Aerial photographs. During the study we experimented with various CRFs to find which CRF gives the best results on images and compared our results on these datasets to show the pitfalls and potentials of different approaches.",
+      //paperUrl: "https://ieeexplore.ieee.org/document/8991232",
+      //codeUrl: "https://github.com/dhawan98/Post-Processing-of-Image-Segmentation-using-CRF"
     },
     {
-      title: "Attention Mechanisms for Fine-Grained Visual-Linguistic Alignment",
-      authors: "Smith, A., Doe, J., Brown, M.",
-      conference: "Association for Computational Linguistics (ACL)",
-      year: "2021",
-      abstract: "This paper introduces a novel attention mechanism designed specifically for fine-grained alignment between visual regions and linguistic phrases. Our approach extends traditional cross-attention by incorporating structural constraints derived from syntactic parsing of the text. We demonstrate that this structured attention significantly improves performance on tasks requiring precise grounding of language to visual elements, such as referring expression comprehension and visual question answering.",
-      paperUrl: "https://arxiv.org/abs/example3"
+      title: "Building an AI Chatbot with User-Uploaded Knowledge Using LangChain and RAG",
+      authors: "Aashish Dhawan",
+      conference: "Medium.com",
+      year: "2024",
+      abstract: "This guide details building an AI chatbot using LangChain, RAG, and technologies such as OpenAI, FAISS, and Pinecone. It outlines steps for data ingestion, indexing, and querying to create a context-aware chatbot with user-uploaded knowledge.",
+      articleUrl: "https://medium.com/@aashishdhawan_2946/building-an-ai-chatbot-with-user-uploaded-knowledge-using-langchain-and-rag-b648251de2b2",
+      codeUrl: "https://github.com/dhawan98/QueryBot"
+    },
+    {
+      title: "Getting started with langchain: a beginners guide to building llm powered apps",
+      authors: "Aashish Dhawan",
+      conference: "Medium.com",
+      year: "2025",
+      abstract: "This guide introduces LangChain, a Python framework for building LLM-powered applications. It covers setup, core concepts, and practical steps to create intelligent apps using chains and agents, leveraging technologies like OpenAI, Hugging Face, and vector databases.",
+      articleUrl: "https://medium.com/@aashishdhawan_2946/getting-started-with-langchain-a-beginners-guide-to-building-llm-powered-apps-00a97257d2b5",
+      //codeUrl: 
+    },
+    {
+      title: "Build Your Own AI Agent in 20 Minutes — No Coding Required!",
+      authors: "Aashish Dhawan",
+      conference: "Medium.com",
+      year: "2025",
+      abstract: "This guide demonstrates how to build an agentic AI system in 20 minutes without coding using LangChain, OpenAI, and Flowise. It covers setting up a no-code interface, configuring LLM-powered workflows, and deploying a functional AI agent for real-world applications.",
+      articleUrl: "https://medium.com/@aashishdhawan_2946/build-your-own-ai-agent-in-20-minutes-no-coding-required-16bbb9a0da8f",
+      //codeUrl: 
     }
   ];
 
   return (
-    <AnimatedSection id="publications" title="Publications">
+    <AnimatedSection id="publications" title="Published Works">
       <div className="space-y-4">
         {publications.map((publication, index) => (
           <Publication 

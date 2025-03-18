@@ -43,13 +43,14 @@ const Navigation: React.FC = () => {
             handleLinkClick('hero');
           }}
         >
-          <span className="text-primary">John Doe</span>
+          <span className="text-primary">Aashish Dhawan</span>
         </a>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
           {[
             { name: 'Bio', id: 'bio' },
+            { name: 'Experience', id: 'experience' },
             { name: 'Projects', id: 'projects' },
             { name: 'Publications', id: 'publications' },
             { name: 'Open Source', id: 'opensource' },

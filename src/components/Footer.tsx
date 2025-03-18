@@ -11,9 +11,9 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8 mb-12">
           <div className="text-center md:text-left max-w-sm">
-            <h3 className="text-xl font-medium mb-4">John Doe</h3>
+            <h3 className="text-xl font-medium mb-4">Aashish Dhawan</h3>
             <p className="text-muted-foreground mb-6">
-              PhD Student at University of Florida, researching the intersection of Natural Language Processing and Computer Vision.
+              PhD Scholar at University of Florida, researching the intersection of AI, Natural Language Processing and Computer Vision.
             </p>
             <div className="flex flex-col gap-2">
               <div className="flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground">
@@ -21,11 +21,11 @@ const Footer: React.FC = () => {
                 <span>Gainesville, FL, USA</span>
               </div>
               <a 
-                href="mailto:john.doe@ufl.edu" 
+                href="mailto:aashudhawan@gmail.com" 
                 className="flex items-center justify-center md:justify-start gap-2 text-sm hover-underline"
               >
                 <Mail size={14} />
-                <span>john.doe@ufl.edu</span>
+                <span>aashudhawan@gmail.com</span>
               </a>
             </div>
           </div>
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
         
         <div className="border-t border-border/40 pt-6 flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-muted-foreground order-2 md:order-1">
-            &copy; {currentYear} John Doe. All rights reserved.
+            &copy; {currentYear} Aashish Dhawan. All rights reserved.
           </div>
           
           <div className="mb-4 md:mb-0 order-1 md:order-2">

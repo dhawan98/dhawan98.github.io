@@ -36,16 +36,16 @@ interface SocialLinksProps {
 const SocialLinks: React.FC<SocialLinksProps> = ({ className, iconSize = 20 }) => {
   const socialLinks = [
     { 
-      href: "https://github.com/yourusername", 
+      href: "https://github.com/dhawan98", 
       icon: <Github size={iconSize} />, 
       label: "GitHub" 
     },
     { 
-      href: "https://linkedin.com/in/yourusername", 
+      href: "https://www.linkedin.com/in/aashish-dhawan/", 
       icon: <Linkedin size={iconSize} />, 
       label: "LinkedIn" 
     },
-    { 
+    /**{ 
       href: "https://huggingface.co/yourusername", 
       icon: <ExternalLink size={iconSize} />, 
       label: "HuggingFace" 
@@ -54,9 +54,8 @@ const SocialLinks: React.FC<SocialLinksProps> = ({ className, iconSize = 20 }) =
       href: "https://kaggle.com/yourusername", 
       icon: <ExternalLink size={iconSize} />, 
       label: "Kaggle" 
-    },
+    },**/
   ];
-
   return (
     <div className={cn("flex space-x-3", className)}>
       {socialLinks.map((link, index) => (

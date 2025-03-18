@@ -11,7 +11,7 @@ const Bio: React.FC = () => {
         <div className="md:col-span-1 flex justify-center md:justify-start">
           <div className="relative w-48 h-48 rounded-full overflow-hidden">
             <img
-              src="/placeholder-profile.jpg"
+              src="/profile.png"
               alt="Profile"
               className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
             />
