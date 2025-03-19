@@ -10,7 +10,7 @@ import SocialLinks from '@/components/SocialLinks';
 import ResumeCTA from '@/components/ResumeCTA';
 import Experience from "@/components/Experience";
 import Skills from '@/components/Skills';
-
+import BeyondTheLab from '@/components/BeyondTheLab'
 
 
 const Index = () => {
@@ -67,6 +67,8 @@ const Index = () => {
       <Publications />
       <div className="section-divider" />
       <OpenSource />
+      <div className="section-divider" />
+      <BeyondTheLab />
     </MainLayout>
   );
 };
