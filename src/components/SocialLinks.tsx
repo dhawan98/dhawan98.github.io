@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Github, Linkedin, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface SocialLinkProps {
@@ -45,16 +44,11 @@ const SocialLinks: React.FC<SocialLinksProps> = ({ className, iconSize = 20 }) =
       icon: <Linkedin size={iconSize} />, 
       label: "LinkedIn" 
     },
-    /**{ 
-      href: "https://huggingface.co/yourusername", 
-      icon: <ExternalLink size={iconSize} />, 
-      label: "HuggingFace" 
-    },
     { 
-      href: "https://kaggle.com/yourusername", 
-      icon: <ExternalLink size={iconSize} />, 
-      label: "Kaggle" 
-    },**/
+      href: "mailto:aashudhawan@gmail.com", 
+      icon: <Mail size={iconSize} />, 
+      label: "Gmail" 
+    }
   ];
   return (
     <div className={cn("flex space-x-3", className)}>

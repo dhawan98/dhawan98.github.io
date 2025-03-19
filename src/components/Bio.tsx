@@ -25,16 +25,19 @@ const Bio: React.FC = () => {
               University of Florida, Gainesville, FL
             </p>
             <p className="leading-relaxed mb-6">
-              I am a PhD student specializing in Machine Learning and Artificial Intelligence, 
-              with a focus on Natural Language Processing and Computer Vision. My research 
-              integrates these two fields to develop multimodal AI systems that can understand 
-              and reason about the world through both visual and textual information.
-            </p>
-            <p className="leading-relaxed mb-8">
-              My academic journey is driven by a passion for creating AI systems that can 
+              I am a Data Scientist and Machine Learning Engineer specializing in Generative AI,
+              Deep Learning, and Large-Scale Models. My academic journey is driven by a passion
+              for creating AI systems that can 
               better understand and interact with humans. I am particularly interested in 
               developing models that can perform complex reasoning tasks across modalities, 
               bridging the gap between language understanding and visual perception.
+            </p>
+            <p className="leading-relaxed mb-8">
+              With experience at institutions like the University of Florida, ISRO, and the University of 
+              Sydney, I’ve developed solutions that improve model efficiency, enhance data insights, and 
+              scale AI systems to serve thousands of users. Whether building LLM pipelines, optimizing 
+              multimodal systems, or deploying AI solutions in production, I thrive on creating impactful 
+              innovations that push the boundaries of machine learning.
             </p>
           </div>
           
