@@ -12,7 +12,7 @@ interface SkillItem {
   name: string;
   icon: React.ReactNode;
   category: string;
-  level: 'Beginner' | 'Intermediate' | 'Advanced';
+  level: 'Beginner' | 'Intermediate' | 'Advanced'; // still in data but not displayed
   certification?: string;
 }
 
@@ -61,13 +61,13 @@ const Skills: React.FC = () => {
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] animate-gradient" />
 
       {/* Filter Tabs */}
-      <div className="flex justify-center gap-4 mb-6">
+      <div className="flex flex-wrap justify-center gap-4 mb-6">
         {categories.map((category) => (
           <motion.button
             key={category}
             onClick={() => setSelectedCategory(category)}
             className={cn(
-              'px-5 py-2 rounded-full text-sm font-medium transition-all',
+              'px-4 py-2 rounded-full text-sm font-medium transition-all',
               selectedCategory === category
                 ? 'bg-[#5E5CE6] text-white shadow-md'
                 : 'bg-[#334155] text-white hover:bg-[#5E5CE6] hover:text-white'
@@ -80,55 +80,44 @@ const Skills: React.FC = () => {
         ))}
       </div>
 
-      {/* Skills Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {filteredSkills.map((skill, index) => (
-          <motion.div
-            key={skill.name}
-            className={cn(
-              'relative flex flex-col items-center p-5 rounded-xl bg-[#1e293b] border border-[#5E5CE6] shadow-md',
-              'hover:shadow-xl hover:scale-105 transition-transform duration-300'
-            )}
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.3, delay: index * 0.05 }}
-            viewport={{ once: true }}
-          >
-            {/* Skill Icon */}
+      {/* Big Skills Container */}
+      <div className="relative rounded-2xl bg-[#1e293b] p-6 shadow-xl mx-4">
+        {/* Skills Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {filteredSkills.map((skill, index) => (
             <motion.div
-              className="mb-2"
-              whileHover={{ rotate: 15, scale: 1.2 }}
-            >
-              {skill.icon}
-            </motion.div>
-
-            <p className="text-sm text-center text-white">{skill.name}</p>
-
-            {/* Skill Level Badge */}
-            <span
+              key={skill.name}
               className={cn(
-                'text-xs px-3 py-1 rounded-full mt-2',
-                skill.level === 'Advanced' && 'bg-green-500 text-white',
-                skill.level === 'Intermediate' && 'bg-yellow-500 text-black',
-                skill.level === 'Beginner' && 'bg-blue-500 text-white'
+                'flex flex-col items-center p-3 sm:p-4 md:p-5 rounded-2xl bg-[#1e293b] border border-[#5E5CE6] shadow-md group',
+                'hover:shadow-xl hover:scale-105 transition-transform duration-300'
               )}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.3, delay: index * 0.05 }}
+              viewport={{ once: true }}
             >
-              {skill.level}
-            </span>
-
-            {/* Certification Link */}
-            {skill.certification && (
-              <a
-                href={skill.certification}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-400 text-xs mt-2 hover:underline"
+              {/* Skill Icon */}
+              <motion.div
+                className="mb-2"
+                whileHover={{ rotate: 15, scale: 1.2 }}
               >
-                Certification
-              </a>
-            )}
-          </motion.div>
-        ))}
+                {skill.icon}
+              </motion.div>
+              <p className="text-sm text-center text-white">{skill.name}</p>
+              {/* Certification Link */}
+              {skill.certification && (
+                <a
+                  href={skill.certification}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 text-xs mt-2 hover:underline"
+                >
+                  Certification
+                </a>
+              )}
+            </motion.div>
+          ))}
+        </div>
       </div>
     </AnimatedSection>
   );

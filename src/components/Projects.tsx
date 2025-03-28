@@ -110,7 +110,21 @@ const Projects: React.FC = () => {
       technologies: ["BERT", "BioBERT", "Medical NLP", "Knowledge Graphs"],
       githubUrl: "https://github.com/yourusername/medical-nlp",
       demoUrl: "https://medical-nlp-demo.com"
-    }
+    },
+    {
+      title: "Image-Generation Toolkit",
+      description: "An efficient pipeline for generating customized images using Flux models integrated with multiple LoRA adapters directly from Hugging Face.",
+      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      technologies: ["CLIP", "GPT-3", "Vision-Language Models"],
+      githubUrl: "https://github.com/yourusername/zero-shot-vqa"
+    },
+    {
+      title: "Image-Generation Toolkit",
+      description: "An efficient pipeline for generating customized images using Flux models integrated with multiple LoRA adapters directly from Hugging Face.",
+      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      technologies: ["CLIP", "GPT-3", "Vision-Language Models"],
+      githubUrl: "https://github.com/yourusername/zero-shot-vqa"
+    },
   ];
 
   return (
