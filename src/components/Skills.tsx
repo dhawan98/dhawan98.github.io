@@ -12,7 +12,7 @@ interface SkillItem {
   name: string;
   icon: React.ReactNode;
   category: string;
-  level: 'Beginner' | 'Intermediate' | 'Advanced'; // still in data but not displayed
+  level: 'Beginner' | 'Intermediate' | 'Advanced'; // in data but not displayed
   certification?: string;
 }
 

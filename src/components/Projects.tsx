@@ -93,8 +93,7 @@ const Projects: React.FC = () => {
       description: "A deep learning model that integrates facial expression and text sentiment analysis to recognize human emotions more accurately than unimodal approaches.",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       technologies: ["PyTorch", "Transformers", "Computer Vision", "NLP"],
-      githubUrl: "https://github.com/yourusername/multimodal-emotion",
-      demoUrl: "https://your-demo-link.com"
+      githubUrl: "https://github.com/yourusername/multimodal-emotion"
     },
     {
       title: "Zero-shot Visual Question Answering",
@@ -108,23 +107,55 @@ const Projects: React.FC = () => {
       description: "A specialized NLP framework for processing medical literature and clinical notes, identifying relationships between symptoms, diagnoses, and treatments.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       technologies: ["BERT", "BioBERT", "Medical NLP", "Knowledge Graphs"],
-      githubUrl: "https://github.com/yourusername/medical-nlp",
-      demoUrl: "https://medical-nlp-demo.com"
+      githubUrl: "https://github.com/yourusername/medical-nlp"
     },
     {
       title: "Image-Generation Toolkit",
-      description: "An efficient pipeline for generating customized images using Flux models integrated with multiple LoRA adapters directly from Hugging Face.",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      technologies: ["CLIP", "GPT-3", "Vision-Language Models"],
+      description: "Nope! that's not me up there. It is AI generated me using diffusion models, PEFT and LoRAs ",
+      image: "/LoRA.jpeg",
+      technologies: ["LoRA", "Diffusers", "Vision-Language Models"],
       githubUrl: "https://github.com/yourusername/zero-shot-vqa"
     },
     {
-      title: "Image-Generation Toolkit",
-      description: "An efficient pipeline for generating customized images using Flux models integrated with multiple LoRA adapters directly from Hugging Face.",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      technologies: ["CLIP", "GPT-3", "Vision-Language Models"],
-      githubUrl: "https://github.com/yourusername/zero-shot-vqa"
+      title: "Satellite Image Segmentation using CRF",
+      description: "A project utilizing Conditional Random Fields to refine segmented images, enhancing the accuracy of segmentation outputs from various techniques.",
+      image: "/CRF.png",
+      technologies: ["Python", "ML/AI", "Conditional Random Fields"],
+      githubUrl: "https://github.com/dhawan98/Post-Processing-of-Image-Segmentation-using-CRF"
     },
+    
+    {
+      title: "Personal Portfolio Website",
+      description: "A responsive and modern personal portfolio website built using Tailwind CSS and TypeScript, showcasing projects, skills, and experiences.",
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1470&q=80",
+      technologies: ["Tailwind CSS", "TypeScript", "HTML", "JavaScript"],
+      githubUrl: "https://github.com/dhawan98/dhawan98.github.io"
+    },
+    {
+      title: "Paper2Code",
+      description: "An AI-powered tool that converts research papers into functional Python code implementations by extracting key insights and generating corresponding scripts.",
+      image: "/paper2code.png",
+      technologies: ["Python", "FastAPI", "Streamlit", "OpenAI API"],
+      githubUrl: "https://github.com/dhawan98/Paper2Code"
+    },
+    {
+      title: "QueryBot",
+      description: "An AI-powered chatbot that utilizes LangChain, OpenAI, FastAPI, and Streamlit to provide context-aware responses based on user-uploaded documents.",
+      image: "/image.jpg",
+      technologies: ["LangChain", "OpenAI", "FastAPI", "Streamlit", "FAISS"],
+      githubUrl: "https://github.com/dhawan98/QueryBot"
+    },
+    {
+      title: "BankMicroservice",
+      description: "A real-time banking microservice implementing event-sourcing for balance calculations, developed using Java, Maven, and Spring Boot.",
+      image: "/micro.jpeg",
+      technologies: ["Java", "Maven", "Spring Boot"],
+      githubUrl: "https://github.com/dhawan98/BankMicroservice"
+    }
+    
+    
+
+    
   ];
 
   return (

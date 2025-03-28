@@ -98,51 +98,39 @@ const Contribution: React.FC<ContributionProps> = ({
 
 const OpenSource: React.FC = () => {
   const contributions = [
+    
     {
-      project: "Hugging Face Transformers",
-      description: "A library of state-of-the-art pre-trained models for natural language understanding and generation.",
-      role: "Contributor",
-      contributions: [
-        "Implemented multimodal fusion techniques for vision-language models",
-        "Added support for medical domain fine-tuning recipes",
-        "Fixed bugs in the attention mechanism implementation",
-        "Improved documentation for vision-transformer models"
+      "project": "ComfyUI",
+      "description": "An open-source, node-based UI for creating stable diffusion workflows.",
+      "role": "Contributor",
+      "contributions": [
+        "Fixed `attn_mask` issue in `DoubleStreamBlock.forward()` by allowing kwargs",
+        "Updated `model.py` for improved compatibility with attention mask arguments",
+        "Ensured stable execution across diffusion workflows using updated attention logic"
       ],
-      url: "https://github.com/huggingface/transformers",
-      stars: 64000,
-      forks: 15300,
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1470&q=80"
+      "url": "https://github.com/comfyanonymous/ComfyUI",
+      "stars": 72600,
+      "forks": 7900,
+      "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1470&q=80"
     },
+    
     {
-      project: "PyTorch Image Models (timm)",
-      description: "A collection of image models, layers, utilities, optimizers, schedulers, data-loaders, and more for PyTorch.",
-      role: "Contributor",
+      project: "ML tools",
+      description: "An open-source platform that integrates various AI tools and models to enable exploration and experimentation in generative AI, computer vision, and language tasks.",
+      role: "Creator & Instructor",
       contributions: [
-        "Added implementation of novel attention mechanism",
-        "Contributed optimizations for mixed precision training",
-        "Fixed CUDA memory leaks in forward pass",
-        "Added benchmarking tools for model comparison"
+        "Developed Jupyter notebooks illustrating key ML and DL concepts",
+    "Designed practical examples for algorithms like Batch vs. Stochastic Gradient Descent",
+    "Created demos on CNNs for image classification tasks",
+    "Implemented GANs for generating synthetic data",
+    "Provided insights into challenges like vanishing gradients and overfitting"
       ],
-      url: "https://github.com/rwightman/pytorch-image-models",
-      stars: 23800,
-      forks: 4100,
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=1470&q=80"
-    },
-    {
-      project: "ML Research Tools",
-      description: "A personal collection of utilities and tools for machine learning research, with a focus on reproducibility and experiment tracking.",
-      role: "Creator & Maintainer",
-      contributions: [
-        "Developed comprehensive logging and experiment tracking",
-        "Created utilities for hyperparameter optimization",
-        "Implemented visualization tools for model interpretability",
-        "Added integration with popular ML frameworks"
-      ],
-      url: "https://github.com/yourusername/ml-research-tools",
-      stars: 430,
-      forks: 87,
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1470&q=80"
+      url: "https://github.com/dhawan98/AI_ExplorerHub",
+      stars: 0,
+      forks: 0,
+      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1470&q=80"
     }
+    
   ];
 
   return (

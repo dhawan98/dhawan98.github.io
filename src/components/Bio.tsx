@@ -20,7 +20,7 @@ const Bio: React.FC = () => {
         
         <div className="md:col-span-2 space-y-6">
           <div>
-            <h3 className="text-xl font-medium mb-4">PhD Candidate in Computer Science</h3>
+            <h3 className="text-xl font-medium mb-4">PhD Scholar in Computer Science</h3>
             <p className="text-muted-foreground mb-4">
               University of Florida, Gainesville, FL
             </p>

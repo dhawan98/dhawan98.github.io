@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="mb-4 md:mb-0 order-1 md:order-2">
-            <span className="text-sm text-muted-foreground">Built with love and code</span>
+            <span className="text-sm text-muted-foreground">Written between debug sessions, Crafted with coffee and late nights</span>
           </div>
         </div>
       </div>
