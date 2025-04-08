@@ -110,6 +110,13 @@ const Projects: React.FC = () => {
       githubUrl: "https://github.com/yourusername/medical-nlp"
     },
     {
+      title: "Whisper: Your personal therapist",
+      description: "Built a full stack app using FASTAPI and react, which acts as a personal therapist supporting text and voice and added gamification to keep track of your progress",
+      image: "",
+      technologies: ["FastAPI", "React", "Typescript", "OpenAI"],
+      githubUrl: "https://github.com/dhawan98/Whisper-AI-Therapist"
+    },
+    {
       title: "Image-Generation Toolkit",
       description: "Nope! that's not me up there. It is AI generated me using diffusion models, PEFT and LoRAs ",
       image: "/LoRA.jpeg",
