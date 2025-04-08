@@ -112,7 +112,7 @@ const Projects: React.FC = () => {
     {
       title: "Whisper: Your personal therapist",
       description: "Built a full stack app using FASTAPI and react, which acts as a personal therapist supporting text and voice and added gamification to keep track of your progress",
-      image: "",
+      image: "/whisperAI.png",
       technologies: ["FastAPI", "React", "Typescript", "OpenAI"],
       githubUrl: "https://github.com/dhawan98/Whisper-AI-Therapist"
     },
