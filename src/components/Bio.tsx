@@ -30,7 +30,7 @@ const Bio: React.FC = () => {
               for creating AI systems that can 
               better understand and interact with humans. I am particularly interested in 
               developing models that can perform complex reasoning tasks across modalities, 
-              bridging the gap between language understanding and visual perception.
+              and explain the decisions made via linguistic and visual perception.
             </p>
             <p className="leading-relaxed mb-8">
               With experience at institutions like the University of Florida, ISRO, and the University of 
