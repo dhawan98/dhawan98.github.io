@@ -34,7 +34,7 @@ const Index = () => {
               Aashish Dhawan
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-10">
-              Exploring the intersection of <span className="text-primary font-medium">AI, </span><span className="text-primary font-medium">Natural Language Processing</span> and <span className="text-primary font-medium">Computer Vision</span> to build intelligent systems.
+              PhD student - Exploring the intersection of <span className="text-primary font-medium">AI, </span><span className="text-primary font-medium">Natural Language Processing</span> and <span className="text-primary font-medium">Computer Vision</span> to build intelligent systems.
             </p>
             
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 mt-10">

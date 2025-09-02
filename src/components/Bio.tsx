@@ -25,7 +25,7 @@ const Bio: React.FC = () => {
               University of Florida, Gainesville, FL
             </p>
             <p className="leading-relaxed mb-6">
-              I am a Data Scientist and Machine Learning Engineer specializing in Generative AI,
+              I am a Machine Learning Researcher specializing in Generative AI,
               Deep Learning, and Large-Scale Models. My academic journey is driven by a passion
               for creating AI systems that can 
               better understand and interact with humans. I am particularly interested in 

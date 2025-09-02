@@ -147,6 +147,24 @@ const articlePublications: PublicationProps[] = [
     image: "/langchain.jpg"
   },
   {
+    title: "Some Things Should Stay Human: The Quiet Risks of AI Therapists",
+    authors: "Aashish Dhawan",
+    conference: "Medium.com",
+    year: "2025",
+    abstract: "My experience building a therapist powered by AI",
+    articleUrl: "https://medium.com/@aashishdhawan_2946/some-things-should-stay-human-the-quiet-risks-of-ai-therapists-582137347604",
+    image: "/langchain.jpg"
+  },
+  {
+    title: "Neurosymbolic AI: The What, Why, and How of Hybrid Intelligence",
+    authors: "Aashish Dhawan",
+    conference: "Medium.com",
+    year: "2025",
+    abstract: "Do we actually understand AI? How does it make its decisions?",
+    articleUrl: "https://medium.com/@aashishdhawan_2946/neurosymbolic-ai-the-what-why-and-how-of-hybrid-intelligence-55234dd5adf1",
+    image: "/langchain.jpg"
+  },
+  {
     title: "Build Your Own AI Agent in 20 Minutes — No Coding Required!",
     authors: "Aashish Dhawan",
     conference: "Medium.com",

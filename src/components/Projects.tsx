@@ -88,27 +88,27 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
 const Projects: React.FC = () => {
   const projects = [
-    {
-      title: "Multimodal Emotion Recognition",
-      description: "A deep learning model that integrates facial expression and text sentiment analysis to recognize human emotions more accurately than unimodal approaches.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      technologies: ["PyTorch", "Transformers", "Computer Vision", "NLP"],
-      githubUrl: "https://github.com/yourusername/multimodal-emotion"
-    },
-    {
-      title: "Zero-shot Visual Question Answering",
-      description: "A novel approach for answering questions about images without specific training examples, leveraging large language models and visual encoders.",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      technologies: ["CLIP", "GPT-3", "Vision-Language Models"],
-      githubUrl: "https://github.com/yourusername/zero-shot-vqa"
-    },
-    {
-      title: "NLP for Medical Text Analysis",
-      description: "A specialized NLP framework for processing medical literature and clinical notes, identifying relationships between symptoms, diagnoses, and treatments.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      technologies: ["BERT", "BioBERT", "Medical NLP", "Knowledge Graphs"],
-      githubUrl: "https://github.com/yourusername/medical-nlp"
-    },
+    // {
+    //   title: "Multimodal Emotion Recognition",
+    //   description: "A deep learning model that integrates facial expression and text sentiment analysis to recognize human emotions more accurately than unimodal approaches.",
+    //   image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    //   technologies: ["PyTorch", "Transformers", "Computer Vision", "NLP"],
+    //   githubUrl: "https://github.com/yourusername/multimodal-emotion"
+    // },
+    // {
+    //   title: "Zero-shot Visual Question Answering",
+    //   description: "A novel approach for answering questions about images without specific training examples, leveraging large language models and visual encoders.",
+    //   image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    //   technologies: ["CLIP", "GPT-3", "Vision-Language Models"],
+    //   githubUrl: "https://github.com/yourusername/zero-shot-vqa"
+    // },
+    // {
+    //   title: "NLP for Medical Text Analysis",
+    //   description: "A specialized NLP framework for processing medical literature and clinical notes, identifying relationships between symptoms, diagnoses, and treatments.",
+    //   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    //   technologies: ["BERT", "BioBERT", "Medical NLP", "Knowledge Graphs"],
+    //   githubUrl: "https://github.com/yourusername/medical-nlp"
+    // },
     {
       title: "Whisper: Your personal therapist",
       description: "Built a full stack app using FASTAPI and react, which acts as a personal therapist supporting text and voice and added gamification to keep track of your progress",
