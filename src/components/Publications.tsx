@@ -31,7 +31,7 @@ const Publication: React.FC<PublicationProps> = ({
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   return (
-    <div 
+    <div
       className={cn(
         "border-b border-border/40 py-8 transition-all duration-300 hover:bg-secondary/20 rounded-lg p-6 -mx-6",
         className
@@ -43,10 +43,10 @@ const Publication: React.FC<PublicationProps> = ({
         <span className="font-medium text-white">{conference}</span>
         <span className="text-muted-foreground">{year}</span>
       </div>
-      
+
       {abstract && (
         <div className="relative">
-          <p 
+          <p
             className={cn(
               "text-muted-foreground transition-all duration-300",
               isExpanded ? "" : "line-clamp-2"
@@ -62,12 +62,12 @@ const Publication: React.FC<PublicationProps> = ({
           </button>
         </div>
       )}
-      
+
       <div className="flex flex-wrap gap-4 mt-4">
         {paperUrl && (
-          <a 
-            href={paperUrl} 
-            target="_blank" 
+          <a
+            href={paperUrl}
+            target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1 text-sm hover-underline"
             aria-label={`Read paper: ${title}`}
@@ -78,9 +78,9 @@ const Publication: React.FC<PublicationProps> = ({
         )}
 
         {articleUrl && (
-          <a 
-            href={articleUrl} 
-            target="_blank" 
+          <a
+            href={articleUrl}
+            target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1 text-sm hover-underline"
             aria-label={`Read article: ${title}`}
@@ -89,11 +89,11 @@ const Publication: React.FC<PublicationProps> = ({
             <span>Read Article</span>
           </a>
         )}
-        
+
         {codeUrl && (
-          <a 
-            href={codeUrl} 
-            target="_blank" 
+          <a
+            href={codeUrl}
+            target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1 text-sm hover-underline"
             aria-label={`View code for: ${title}`}
@@ -108,6 +108,15 @@ const Publication: React.FC<PublicationProps> = ({
 };
 
 const researchPublications: PublicationProps[] = [
+  {
+    title: "MultiScript30k: Leveraging Multilingual Embeddings to Extend Cross Script Parallel Data",
+    authors: "Christopher Driggers-Ellis, Detravious Brinkley, Ray Chen, Aashish Dhawan, Daisy Zhe Wang, Christan Grant",
+    conference: "NAACL",
+    year: "2025",
+    abstract: "Generated a dataset of 30,000 parallel sentences in 10 languages using multilingual embeddings.",
+    paperUrl: "https://arxiv.org/abs/2512.07442",
+    //codeUrl: "https://github.com/dhawan98/Post-Processing-of-Image-Segmentation-using-CRF"
+  },
   {
     title: "Post Processing of Image Segmentation using Conditional Random Fields",
     authors: "Aashish Dhawan; Pankaj Bodani; Vishal Garg",
@@ -197,13 +206,13 @@ const ArticleTile: React.FC<PublicationProps> = ({
   className
 }) => {
   return (
-    <a 
+    <a
       href={articleUrl}
       target="_blank"
       rel="noopener noreferrer"
       className="block"
     >
-      <div 
+      <div
         className={cn(
           "bg-card border border-border/40 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-md group",
           className
@@ -211,10 +220,10 @@ const ArticleTile: React.FC<PublicationProps> = ({
       >
         <div className="relative h-40">
           {image ? (
-            <img 
-              src={image} 
-              alt={title} 
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+            <img
+              src={image}
+              alt={title}
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
           ) : (
             <div className="h-full bg-gray-200 flex items-center justify-center">
