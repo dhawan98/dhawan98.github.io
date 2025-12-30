@@ -109,9 +109,18 @@ const Publication: React.FC<PublicationProps> = ({
 
 const researchPublications: PublicationProps[] = [
   {
+    title: "Improving Indigenous Language Machine Translation with Synthetic Data and Language-Specific Preprocessing",
+    authors: "Aashish Dhawan, Christopher Driggers-Ellis, Christan Grant, Daisy Zhe Wang",
+    conference: "EACL 2026",
+    year: "2026",
+    abstract: "We improve low-resource Indigenous MT via synthetic parallel data augmentation, language-specific normalization, and multilingual mBART fine-tuning measured by chrF++.",
+    paperUrl: "",
+    codeUrl: "https://github.com/dhawan98/mBART50-extended"
+  },
+  {
     title: "MultiScript30k: Leveraging Multilingual Embeddings to Extend Cross Script Parallel Data",
     authors: "Christopher Driggers-Ellis, Detravious Brinkley, Ray Chen, Aashish Dhawan, Daisy Zhe Wang, Christan Grant",
-    conference: "NAACL",
+    conference: "ArXiv",
     year: "2025",
     abstract: "Generated a dataset of 30,000 parallel sentences in 10 languages using multilingual embeddings.",
     paperUrl: "https://arxiv.org/abs/2512.07442",
