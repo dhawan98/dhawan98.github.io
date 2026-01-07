@@ -114,7 +114,7 @@ const researchPublications: PublicationProps[] = [
     conference: "Preprint, under review at EACL 2026.",
     year: "2026",
     abstract: "We improve low-resource Indigenous MT via synthetic parallel data augmentation, language-specific normalization, and multilingual mBART fine-tuning measured by chrF++.",
-    paperUrl: "",
+    paperUrl: "https://arxiv.org/abs/2601.03135",
     codeUrl: "https://github.com/dhawan98/mBART50-extended"
   },
   {
