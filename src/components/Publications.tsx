@@ -111,7 +111,7 @@ const researchPublications: PublicationProps[] = [
   {
     title: "Improving Indigenous Language Machine Translation with Synthetic Data and Language-Specific Preprocessing",
     authors: "Aashish Dhawan, Christopher Driggers-Ellis, Christan Grant, Daisy Zhe Wang",
-    conference: "Preprint, under review at EACL 2026.",
+    conference: "arXiv preprint, under review at EACL 2026.",
     year: "2026",
     abstract: "We improve low-resource Indigenous MT via synthetic parallel data augmentation, language-specific normalization, and multilingual mBART fine-tuning measured by chrF++.",
     paperUrl: "https://arxiv.org/abs/2601.03135",
@@ -123,7 +123,7 @@ const researchPublications: PublicationProps[] = [
     conference: "arXiv preprint. Under review in ACL Rolling Review (ARR).",
     year: "2025",
     abstract: "Generated a dataset of 30,000 parallel sentences in 10 languages using multilingual embeddings.",
-    paperUrl: "https://arxiv.org/abs/2512.07442",
+    paperUrl: "https://arxiv.org/abs/2512.11074",
     //codeUrl: "https://github.com/dhawan98/Post-Processing-of-Image-Segmentation-using-CRF"
   },
   {

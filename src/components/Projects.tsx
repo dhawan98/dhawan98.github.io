@@ -24,7 +24,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   className
 }) => {
   return (
-    <div 
+    <div
       className={cn(
         "group rounded-lg overflow-hidden transition-all duration-300 hover:shadow-md bg-card",
         "border border-border/40 hover:border-border",
@@ -32,33 +32,33 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       )}
     >
       <div className="relative aspect-video overflow-hidden">
-        <img 
-          src={image} 
-          alt={title} 
+        <img
+          src={image}
+          alt={title}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
       </div>
-      
+
       <div className="p-6">
         <h3 className="text-xl font-medium mb-2">{title}</h3>
         <p className="text-muted-foreground mb-4 line-clamp-3">{description}</p>
-        
+
         <div className="flex flex-wrap gap-2 mb-4">
           {technologies.map((tech, index) => (
-            <span 
-              key={index} 
+            <span
+              key={index}
               className="text-xs px-2 py-1 rounded-full bg-secondary text-secondary-foreground"
             >
               {tech}
             </span>
           ))}
         </div>
-        
+
         <div className="flex gap-4 mt-4">
           {githubUrl && (
-            <a 
-              href={githubUrl} 
-              target="_blank" 
+            <a
+              href={githubUrl}
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-sm hover-underline"
               aria-label={`View ${title} on GitHub`}
@@ -67,11 +67,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               <span>Code</span>
             </a>
           )}
-          
+
           {demoUrl && (
-            <a 
-              href={demoUrl} 
-              target="_blank" 
+            <a
+              href={demoUrl}
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-sm hover-underline"
               aria-label={`View ${title} demo`}
@@ -109,6 +109,23 @@ const Projects: React.FC = () => {
     //   technologies: ["BERT", "BioBERT", "Medical NLP", "Knowledge Graphs"],
     //   githubUrl: "https://github.com/yourusername/medical-nlp"
     // },
+
+
+    {
+      title: "Latent Recurrent World-Model Reasoning for Vision–Language Agents",
+      description: "Developed a latent recurrent reasoning framework that learns internal world-state representations and planning trajectories for vision–language agents, achieving strong generalization on navigation and symbolic reasoning benchmarks.",
+      image: "/coco-r.png",
+      technologies: ["CLIP", "FastAPI", "Python", "Reasoning Models", "Neuro-symbolic Models"],
+      githubUrl: "https://github.com/dhawan98/coconut-r (code releases soon)"
+    },
+    {
+      title: "Explainable Few-Shot Object Detection for Indigenous Manuscripts via Concept-Based Adaptive Feature Transfer",
+      description: "Designed a concept-based, explainable few-shot object detection system for Indigenous Mixtec manuscripts using Adaptive Feature Transfer (AFT) and hierarchical visual explanations, outperforming CLIP baselines in 1–10 shot regimes.",
+      image: "/mixtec.png",
+      technologies: ["CLIP", "FastAPI", "Python", "OpenCV", "PyTorch"],
+      githubUrl: "https://github.com/dhawan98/Objectlearning-demo (code releases soon)"
+    },
+
     {
       title: "Whisper: Your personal therapist",
       description: "Built a full stack app using FASTAPI and react, which acts as a personal therapist supporting text and voice and added gamification to keep track of your progress",
@@ -130,7 +147,7 @@ const Projects: React.FC = () => {
       technologies: ["Python", "ML/AI", "Conditional Random Fields"],
       githubUrl: "https://github.com/dhawan98/Post-Processing-of-Image-Segmentation-using-CRF"
     },
-    
+
     {
       title: "Personal Portfolio Website",
       description: "A responsive and modern personal portfolio website built using Tailwind CSS and TypeScript, showcasing projects, skills, and experiences.",
@@ -159,10 +176,10 @@ const Projects: React.FC = () => {
       technologies: ["Java", "Maven", "Spring Boot"],
       githubUrl: "https://github.com/dhawan98/BankMicroservice"
     }
-    
-    
 
-    
+
+
+
   ];
 
   return (
