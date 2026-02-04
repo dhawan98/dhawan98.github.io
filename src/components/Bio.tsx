@@ -17,7 +17,7 @@ const Bio: React.FC = () => {
             />
           </div>
         </div>
-        
+
         <div className="md:col-span-2 space-y-6">
           <div>
             <h3 className="text-xl font-medium mb-4">PhD Scholar in Computer Science</h3>
@@ -25,22 +25,22 @@ const Bio: React.FC = () => {
               University of Florida, Gainesville, FL
             </p>
             <p className="leading-relaxed mb-6">
-              I am a Machine Learning Researcher specializing in Generative AI,
-              Deep Learning, and Large-Scale Models. My academic journey is driven by a passion
-              for creating AI systems that can 
-              better understand and interact with humans. I am particularly interested in 
-              developing models that can perform complex reasoning tasks across modalities, 
+              I am a Machine Learning Researcher specializing in Large-language models, Vision-Language Models,
+              and Multimodal AI. My academic journey is driven by a passion
+              for creating AI systems that can
+              better understand and interact with humans. I am particularly interested in
+              developing models that can perform complex reasoning tasks across modalities,
               and explain the decisions made via linguistic and visual perception.
             </p>
             <p className="leading-relaxed mb-8">
-              With experience at institutions like the University of Florida, ISRO, and the University of 
-              Sydney, I’ve developed solutions that improve model efficiency, enhance data insights, and 
-              scale AI systems to serve thousands of users. Whether building LLM pipelines, optimizing 
-              multimodal systems, or deploying AI solutions in production, I thrive on creating impactful 
+              With experience at institutions like the University of Florida, ISRO, and the University of
+              Sydney, I’ve developed solutions that improve model efficiency, enhance data insights, and
+              scale AI systems to serve thousands of users. Whether building LLM pipelines, optimizing
+              multimodal systems, or deploying AI solutions in production, I thrive on creating impactful
               innovations that push the boundaries of machine learning.
             </p>
           </div>
-          
+
           <div className="flex flex-col md:flex-row items-center gap-6">
             <ResumeCTA />
             <SocialLinks />
