@@ -124,7 +124,7 @@ const researchPublications: PublicationProps[] = [
     year: "2025",
     abstract: "Generated a dataset of 30,000 parallel sentences in 10 languages using multilingual embeddings.",
     paperUrl: "https://arxiv.org/abs/2512.11074",
-    //codeUrl: "https://github.com/dhawan98/Post-Processing-of-Image-Segmentation-using-CRF"
+    codeUrl: "https://github.com/ufdatastudio/multi30k-extension/",
   },
   {
     title: "Post Processing of Image Segmentation using Conditional Random Fields",
