@@ -39,8 +39,14 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
 
   return (
     <div className="min-h-screen bg-background">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-md focus:bg-background focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-foreground focus:shadow-lg"
+      >
+        Skip to content
+      </a>
       <Navigation />
-      <main className="min-h-screen mx-auto">
+      <main id="main-content" tabIndex={-1} className="min-h-screen mx-auto focus:outline-none">
         {children}
       </main>
       <Footer />

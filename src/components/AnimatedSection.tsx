@@ -16,7 +16,7 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({ id, title, children, 
     <section 
       id={id} 
       className={cn(
-        "py-20 px-6 md:px-12 max-w-7xl mx-auto",
+        "scroll-mt-24 py-20 px-6 md:px-12 max-w-7xl mx-auto",
         className
       )}
     >

@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import { ArrowDown } from 'lucide-react';
 import MainLayout from '@/layouts/MainLayout';
 import Bio from '@/components/Bio';

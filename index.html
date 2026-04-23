@@ -3,17 +3,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://images.unsplash.com; font-src 'self'; connect-src 'self' ws: wss:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aashish Dhawan</title>
-    <meta name="description" content="Portfolio" />
+    <title>Aashish Dhawan | Multimodal AI Researcher</title>
+    <meta
+      name="description"
+      content="Portfolio of Aashish Dhawan, a University of Florida PhD student building multimodal AI, NLP, and computer vision systems."
+    />
     <meta name="author" content="Aashish Dhawan" />
+    <meta property="og:title" content="Aashish Dhawan | Multimodal AI Researcher" />
+    <meta
+      property="og:description"
+      content="University of Florida PhD student working across multimodal AI, natural language processing, and computer vision."
+    />
     <meta property="og:image" content="/profile.png" />
   </head>
 
   <body>
     <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
