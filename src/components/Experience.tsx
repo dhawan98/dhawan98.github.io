@@ -19,7 +19,7 @@ const experiences: ExperienceProps[] = [
     company: 'ExxonMobil, Houston, Texas',
     year: 'May 2026 - Present',
     description: [
-      '',
+
     ],
     icon: <FaUniversity className="text-white" />
   },
