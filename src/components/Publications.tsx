@@ -109,6 +109,15 @@ const Publication: React.FC<PublicationProps> = ({
 
 const researchPublications: PublicationProps[] = [
   {
+    title: "Retrieval-Augmented Long-Context Translation for Cultural Image Captioning: Gators submission for AmericasNLP 2026 shared task",
+    authors: "Aashish Dhawan, Christopher Driggers-Ellis, Dzmitry Kasinets, Daisy Zhe Wang, Christan Grant",
+    conference: "6th Workshop on NLP for Indigenous Languages of the Americas (AmericasNLP) @ ACL 2026",
+    year: "2026",
+    abstract: "We present the University of Florida Gators submission to the AmericasNLP 2026 shared task on cultural image captioning for Indigenous languages. Our system uses a two-stage pipeline that generates Spanish intermediate captions with Qwen2.5-VL, then produces target-language captions using retrieval-augmented many-shot prompting with Gemini 2.5 Flash. The submission was the overall winner of the shared task.",
+    paperUrl: "https://arxiv.org/abs/2605.20626",
+    codeUrl: "https://github.com/dhawan98/AmericasNLP2026-Gators-Submission"
+  },
+  {
     title: "Improving Indigenous Language Machine Translation with Synthetic Data and Language-Specific Preprocessing",
     authors: "Aashish Dhawan, Christopher Driggers-Ellis, Christan Grant, Daisy Zhe Wang",
     conference: "9th Workshop on Technologies for Machine Translation of Low-Resource Languages (LoResMT) @ EACL 2026",

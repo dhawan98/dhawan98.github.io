@@ -15,6 +15,15 @@ interface ExperienceProps {
 
 const experiences: ExperienceProps[] = [
   {
+    role: 'Computational Data Scientist; Intern',
+    company: 'ExxonMobil, Houston, Texas',
+    year: 'May 2026 - Present',
+    description: [
+      '',
+    ],
+    icon: <FaUniversity className="text-white" />
+  },
+  {
     role: 'ML/AI Researcher',
     company: 'University of Florida',
     year: '2023 - Present',
@@ -88,9 +97,8 @@ const Experience: React.FC = () => {
             return (
               <motion.div
                 key={index}
-                className={`relative md:flex md:items-start ${
-                  isLeftSide ? 'md:justify-start' : 'md:justify-end'
-                }`}
+                className={`relative md:flex md:items-start ${isLeftSide ? 'md:justify-start' : 'md:justify-end'
+                  }`}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
