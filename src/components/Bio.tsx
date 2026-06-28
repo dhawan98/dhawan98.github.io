@@ -25,19 +25,19 @@ const Bio: React.FC = () => {
               University of Florida, Gainesville, FL
             </p>
             <p className="leading-relaxed mb-6">
-              I am a Machine Learning Researcher specializing in Large-language models, Vision-Language Models,
-              and Multimodal AI. My academic journey is driven by a passion
-              for creating AI systems that can
-              better understand and interact with humans. I am particularly interested in
-              developing models that can perform complex reasoning tasks across modalities,
-              and explain the decisions made via linguistic and visual perception.
+              I research multimodal AI and low-resource NLP at the University of Florida.
+              My recent work on retrieval-augmented translation for Indigenous languages
+              won the <span className="font-semibold">AmericasNLP 2026 Shared Task</span> at
+              ACL (San Diego) — beating every competing team. I care about building systems
+              that actually work on hard, underrepresented problems: languages with little
+              data, visual domains with few labels, decisions that need to be explained.
             </p>
             <p className="leading-relaxed mb-8">
-              With experience at institutions like the University of Florida, ISRO, and the University of
-              Sydney, I’ve developed solutions that improve model efficiency, enhance data insights, and
-              scale AI systems to serve thousands of users. Whether building LLM pipelines, optimizing
-              multimodal systems, or deploying AI solutions in production, I thrive on creating impactful
-              innovations that push the boundaries of machine learning.
+              Before my PhD I built production AI at ExxonMobil, shipped LLM pipelines for
+              5,000+ users at a health-tech startup, and ran experiments at ISRO and the
+              University of Sydney. I teach ML and Programming Languages at UF and have
+              mentored 300+ students on projects ranging from AI chatbots to real-time
+              computer vision. I like problems at the edge of what models can currently do.
             </p>
           </div>
 

@@ -4,11 +4,11 @@ export interface SectionLink {
 }
 
 export const navigationItems: SectionLink[] = [
-  { id: 'bio', label: 'Bio' },
+  { id: 'bio', label: 'About' },
+  { id: 'education', label: 'Education' },
   { id: 'experience', label: 'Experience' },
   { id: 'skills', label: 'Skills' },
   { id: 'projects', label: 'Projects' },
   { id: 'publications', label: 'Publications' },
-  { id: 'opensource', label: 'Open Source' },
   { id: 'beyond', label: 'Beyond the Lab' },
 ];

@@ -15,71 +15,70 @@ interface ExperienceProps {
 
 const experiences: ExperienceProps[] = [
   {
-    role: 'Computational Data Scientist; Intern',
-    company: 'ExxonMobil, Houston, Texas',
-    year: 'May 2026 - Present',
+    role: 'Computational Data Scientist Intern',
+    company: 'ExxonMobil · Houston, TX',
+    year: 'May 2026 – Present',
     description: [
-
-    ],
-    icon: <FaUniversity className="text-white" />
-  },
-  {
-    role: 'ML/AI Researcher',
-    company: 'University of Florida',
-    year: '2023 - Present',
-    description: [
-      'Pioneering research on AI-driven translation for underrepresented languages.',
-      'Integrating multimodal techniques to enhance translation accuracy.'
-    ],
-    icon: <FaUniversity className="text-white" />
-  },
-  {
-    role: 'Adjunct Faculty',
-    company: 'University of Florida',
-    year: '2023 - Present',
-    description: [
-      'Designed and delivered courses in Machine Learning and Programming Principles.',
-      'Implemented AI tools for automated grading and content generation for 300+ students.'
+      'Building explainable AI (XAI) workflows that translate model outputs, optimization results, and operational constraints into plain-English explanations for non-technical stakeholders.',
+      'Developing Python-based XAI tooling to probe model behavior and support "why," "what changed," and "what-if" reasoning in live operational workflows.',
     ],
     icon: <FaBriefcase className="text-white" />
   },
   {
-    role: 'Graduate Assistant',
-    company: 'University of Florida',
-    year: '2021 - 2023',
+    role: 'Machine Learning Researcher',
+    company: 'Data Science & Research Lab, University of Florida',
+    year: 'May 2024 – Present',
     description: [
-      'Supported course delivery in ML and programming language concepts.',
-      'Streamlined administrative tasks and contributed to research projects.'
+      'Built a few-shot object detection pipeline (CLIP + SAM + DINO + Adaptive Feature Transfer + OHAC) that improved accuracy by 15% over CLIP baselines while preserving concept-level visual explanations.',
+      'Developed a retrieval-augmented long-context translation system for low-resource Indigenous languages using Qwen2.5-VL, BM25, and Gemini 2.5 Flash — system won the AmericasNLP 2026 Shared Task at ACL.',
+      'Fine-tuned multilingual mBART-50 with multi-GPU DDP training, reducing training time by 50% and producing publication-ready ablations and chrF++ evaluation pipelines.',
+    ],
+    icon: <FaUniversity className="text-white" />
+  },
+  {
+    role: 'Adjunct Instructor',
+    company: 'University of Florida',
+    year: 'Aug 2023 – Present',
+    description: [
+      'Designed and delivered lectures, assignments, and rubrics for Programming Languages and Machine Learning courses serving 300+ students per semester.',
+      'Mentored students and TAs on capstone projects: AI chatbots, recommender systems, and real-time computer vision pipelines.',
     ],
     icon: <FaBriefcase className="text-white" />
   },
   {
-    role: 'ML/LLM/AI Consultant',
-    company: 'Atmosphere Apps',
-    year: '2022 - 2023',
+    role: 'AI Engineer, Consultant',
+    company: 'Atmosphere Apps · Gainesville, FL',
+    year: 'Aug 2023 – Apr 2024',
     description: [
-      'Led development of AI solutions reaching thousands of users.',
-      'Optimized platform scalability and boosted user engagement.'
+      'Built GPT-4-integrated recommendation and multilingual transcription workflows using prompt-tuned LLMs, OpenAI Whisper, and NLP extraction; improved prescription matching accuracy by 20% for 5,000+ users.',
+      'Converted audio and video across 10+ languages into searchable transcripts, structured summaries, and quiz outputs, achieving 95% transcription accuracy.',
     ],
     icon: <FaCogs className="text-white" />
   },
   {
-    role: 'Research Intern',
-    company: 'UBTECH AI Lab, University of Sydney, Australia',
-    year: '2021',
+    role: 'Research Assistant',
+    company: 'Graphics Imaging & Light Measurement Lab, University of Florida',
+    year: 'Jan 2021 – May 2023',
     description: [
-      'Optimized AI models for humanoid robotics and computer vision applications.',
-      'Collaborated with international teams to deploy cutting-edge AI techniques.'
+      'Built deep learning pipelines for multispectral image synthesis, quantum simulation acceleration, and material-scattering prediction; reduced evaluation time by up to 82%.',
+    ],
+    icon: <FaUniversity className="text-white" />
+  },
+  {
+    role: 'Visiting Researcher',
+    company: 'UBTECH AI Lab, University of Sydney · Australia',
+    year: 'Dec 2019 – Mar 2020',
+    description: [
+      'Implemented a CNN-based multi-source domain adaptation framework with shared feature extractors and domain-specific classifiers; achieved 71–98% accuracy across 345 categories on 0.6M samples.',
     ],
     icon: <FaRobot className="text-white" />
   },
   {
     role: 'Research Intern',
-    company: 'Space Applications Center - Indian Space Research Organization (SAC-ISRO), India',
-    year: '2021',
+    company: 'Space Applications Center, ISRO · Ahmedabad, India',
+    year: 'May 2019 – Aug 2019',
     description: [
-      'Optimized AI models for humanoid robotics and computer vision applications.',
-      'Collaborated with international teams to deploy cutting-edge AI techniques.'
+      'Developed a CNN–CRF satellite image segmentation pipeline on LISS-3 and POTSDAM datasets; improved segmentation accuracy by 5% and cut inference time from 36 hours to 0.2 seconds (648,000× speedup).',
     ],
     icon: <FaRobot className="text-white" />
   }

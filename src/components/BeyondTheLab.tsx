@@ -11,50 +11,62 @@ const imagePaths = [
   '/skydiving5.jpg', // extra images won't be shown in the mosaic
 ];
 
+const captions = ["Rock climbing", "Portrait", "Playing guitar", "Skydiving"];
+
 const BeyondTheLabGallery: React.FC = () => {
   return (
     <AnimatedSection id="beyond" title="Beyond the Lab">
-      <div className="relative w-full max-w-4xl mx-auto" style={{ height: '600px' }}>
-        {/* Image 1 */}
-        <motion.div
-          className="absolute overflow-hidden rounded-lg shadow-xl"
-          style={{ top: '10%', left: '5%', width: '45%', height: '45%' }}
-          animate={{ rotate: [0, 5, 0] }}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          whileHover={{ scale: 1.1 }}
-        >
-          <img src={imagePaths[0]} alt="Adventure 1" className="w-full h-full object-cover" />
-        </motion.div>
-        {/* Image 2 */}
-        <motion.div
-          className="absolute overflow-hidden rounded-lg shadow-xl"
-          style={{ top: '15%', right: '5%', width: '40%', height: '40%' }}
-          animate={{ rotate: [0, -5, 0] }}
-          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-          whileHover={{ scale: 1.1 }}
-        >
-          <img src={imagePaths[1]} alt="Adventure 2" className="w-full h-full object-cover" />
-        </motion.div>
-        {/* Image 3 */}
-        <motion.div
-          className="absolute overflow-hidden rounded-lg shadow-xl"
-          style={{ bottom: '10%', left: '10%', width: '35%', height: '35%' }}
-          animate={{ rotate: [0, 3, 0] }}
-          transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
-          whileHover={{ scale: 1.1 }}
-        >
-          <img src={imagePaths[2]} alt="Adventure 3" className="w-full h-full object-cover" />
-        </motion.div>
-        {/* Image 4 */}
-        <motion.div
-          className="absolute overflow-hidden rounded-lg shadow-xl"
-          style={{ bottom: '5%', right: '15%', width: '50%', height: '50%' }}
-          animate={{ rotate: [0, -3, 0] }}
-          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-          whileHover={{ scale: 1.1 }}
-        >
-          <img src={imagePaths[3]} alt="Adventure 4" className="w-full h-full object-cover" />
-        </motion.div>
+      <div className="max-w-4xl mx-auto grid grid-cols-2 gap-4">
+        {/* Left column — tall then short */}
+        <div className="flex flex-col gap-4">
+          <motion.div
+            className="overflow-hidden rounded-xl shadow-md"
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.3 }}
+          >
+            <img
+              src={imagePaths[0]}
+              alt={captions[0]}
+              className="w-full h-72 object-cover"
+            />
+          </motion.div>
+          <motion.div
+            className="overflow-hidden rounded-xl shadow-md"
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.3 }}
+          >
+            <img
+              src={imagePaths[2]}
+              alt={captions[2]}
+              className="w-full h-52 object-cover"
+            />
+          </motion.div>
+        </div>
+        {/* Right column — short then tall */}
+        <div className="flex flex-col gap-4">
+          <motion.div
+            className="overflow-hidden rounded-xl shadow-md"
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.3 }}
+          >
+            <img
+              src={imagePaths[1]}
+              alt={captions[1]}
+              className="w-full h-52 object-cover"
+            />
+          </motion.div>
+          <motion.div
+            className="overflow-hidden rounded-xl shadow-md"
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.3 }}
+          >
+            <img
+              src={imagePaths[3]}
+              alt={captions[3]}
+              className="w-full h-72 object-cover"
+            />
+          </motion.div>
+        </div>
       </div>
     </AnimatedSection>
   );

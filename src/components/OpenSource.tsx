@@ -98,39 +98,34 @@ const Contribution: React.FC<ContributionProps> = ({
 
 const OpenSource: React.FC = () => {
   const contributions = [
-    
     {
-      "project": "ComfyUI",
-      "description": "An open-source, node-based UI for creating stable diffusion workflows.",
-      "role": "Contributor",
-      "contributions": [
-        "Fixed `attn_mask` issue in `DoubleStreamBlock.forward()` by allowing kwargs",
-        "Updated `model.py` for improved compatibility with attention mask arguments",
-        "Ensured stable execution across diffusion workflows using updated attention logic"
-      ],
-      "url": "https://github.com/comfyanonymous/ComfyUI",
-      "stars": 72600,
-      "forks": 7900,
-      "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1470&q=80"
-    },
-    
-    {
-      project: "ML tools",
-      description: "An open-source platform that integrates various AI tools and models to enable exploration and experimentation in generative AI, computer vision, and language tasks.",
-      role: "Creator & Instructor",
+      project: "ComfyUI",
+      description: "A node-based UI for creating Stable Diffusion workflows, used by 70k+ developers worldwide.",
+      role: "Contributor",
       contributions: [
-        "Developed Jupyter notebooks illustrating key ML and DL concepts",
-    "Designed practical examples for algorithms like Batch vs. Stochastic Gradient Descent",
-    "Created demos on CNNs for image classification tasks",
-    "Implemented GANs for generating synthetic data",
-    "Provided insights into challenges like vanishing gradients and overfitting"
+        "Fixed attn_mask issue in DoubleStreamBlock.forward() by allowing kwargs passthrough",
+        "Updated model.py for improved compatibility with attention mask arguments",
+        "Ensured stable execution across diffusion workflows with updated attention logic",
       ],
-      url: "https://github.com/dhawan98/AI_ExplorerHub",
-      stars: 0,
-      forks: 0,
-      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1470&q=80"
-    }
-    
+      url: "https://github.com/comfyanonymous/ComfyUI",
+      stars: 72600,
+      forks: 7900,
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1470&q=80",
+    },
+    {
+      project: "mBART-50 Extended",
+      description: "Extended multilingual mBART-50 with synthetic data augmentation and language-specific preprocessing for low-resource Indigenous language MT. Published at LoResMT @ EACL 2026.",
+      role: "Creator",
+      contributions: [
+        "Added synthetic parallel data generation pipeline for low-resource language pairs",
+        "Implemented language-specific tokenization normalization and preprocessing",
+        "Multi-GPU DDP fine-tuning with chrF++ evaluation — 50% reduction in training time",
+      ],
+      url: "https://github.com/dhawan98/mBART50-extended",
+      stars: undefined,
+      forks: undefined,
+      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1470&q=80",
+    },
   ];
 
   return (

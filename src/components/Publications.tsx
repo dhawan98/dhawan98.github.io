@@ -37,10 +37,10 @@ const Publication: React.FC<PublicationProps> = ({
         className
       )}
     >
-      <h3 className="text-xl font-medium text-white mb-2">{title}</h3>
+      <h3 className="text-xl font-medium text-foreground mb-2">{title}</h3>
       <p className="text-muted-foreground mb-4">{authors}</p>
       <div className="flex flex-wrap items-center gap-2 mb-4">
-        <span className="font-medium text-white">{conference}</span>
+        <span className="font-medium text-foreground">{conference}</span>
         <span className="text-muted-foreground">{year}</span>
       </div>
 
@@ -250,10 +250,10 @@ const ArticleTile: React.FC<PublicationProps> = ({
           )}
         </div>
         <div className="p-6">
-          <h4 className="text-xl font-medium mb-2 text-white">{title}</h4>
+          <h4 className="text-xl font-medium mb-2 text-foreground">{title}</h4>
           <p className="text-muted-foreground mb-4">{abstract}</p>
           <div className="flex items-center gap-2 my-2">
-            <span className="font-medium text-white">{conference}</span>
+            <span className="font-medium text-foreground">{conference}</span>
             <span className="text-muted-foreground">{year}</span>
           </div>
           {codeUrl && (

@@ -26,9 +26,9 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({ id, title, children, 
           delay > 0 ? `delay-${delay}` : ""
         )}
       >
-        <div className="mb-16 flex flex-col items-center">
-          <h2 className="text-3xl md:text-4xl font-medium tracking-tight mb-6">{title}</h2>
-          <div className="w-20 h-0.5 bg-primary/20"></div>
+        <div className="mb-10 flex flex-col items-center">
+          <h2 className="text-3xl md:text-4xl font-medium tracking-tight mb-4">{title}</h2>
+          <div className="w-16 h-px bg-primary/40"></div>
         </div>
         
         <div className={staggered ? "stagger-fade-in" : ""}>{children}</div>

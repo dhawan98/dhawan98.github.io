@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, BookOpen } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface SocialLinkProps {
@@ -34,21 +34,26 @@ interface SocialLinksProps {
 
 const SocialLinks: React.FC<SocialLinksProps> = ({ className, iconSize = 20 }) => {
   const socialLinks = [
-    { 
-      href: "https://github.com/dhawan98", 
-      icon: <Github size={iconSize} />, 
-      label: "GitHub" 
+    {
+      href: "https://github.com/dhawan98",
+      icon: <Github size={iconSize} />,
+      label: "GitHub",
     },
-    { 
-      href: "https://www.linkedin.com/in/aashish-dhawan/", 
-      icon: <Linkedin size={iconSize} />, 
-      label: "LinkedIn" 
+    {
+      href: "https://www.linkedin.com/in/aashish-dhawan/",
+      icon: <Linkedin size={iconSize} />,
+      label: "LinkedIn",
     },
-    { 
-      href: "mailto:aashudhawan@gmail.com", 
-      icon: <Mail size={iconSize} />, 
-      label: "Gmail" 
-    }
+    {
+      href: "https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID",
+      icon: <BookOpen size={iconSize} />,
+      label: "Google Scholar",
+    },
+    {
+      href: "mailto:aashudhawan@gmail.com",
+      icon: <Mail size={iconSize} />,
+      label: "Email",
+    },
   ];
   return (
     <div className={cn("flex space-x-3", className)}>
