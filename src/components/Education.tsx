@@ -8,6 +8,8 @@ interface Degree {
   location: string;
   period: string;
   detail?: string;
+  lab?: string;
+  advisor?: string;
 }
 
 const degrees: Degree[] = [
@@ -16,6 +18,8 @@ const degrees: Degree[] = [
     institution: "University of Florida",
     location: "Gainesville, FL",
     period: "Aug 2025 – May 2028 (Expected)",
+    lab: "Data Science and Research Lab",
+    advisor: "Advised by Dr. Daisy Wang",
   },
   {
     degree: "M.S. in Computer Science",
@@ -52,6 +56,12 @@ const Education: React.FC = () => {
               <p className="text-sm text-muted-foreground mt-0.5">
                 {d.institution} · {d.location}
               </p>
+              {d.lab && (
+                <p className="text-sm text-foreground/80 font-medium mt-1.5">{d.lab}</p>
+              )}
+              {d.advisor && (
+                <p className="text-sm text-muted-foreground mt-0.5">{d.advisor}</p>
+              )}
               {d.detail && (
                 <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{d.detail}</p>
               )}

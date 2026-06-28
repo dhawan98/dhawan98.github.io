@@ -25,9 +25,12 @@ const Bio: React.FC = () => {
               University of Florida, Gainesville, FL
             </p>
             <p className="leading-relaxed mb-6">
-              I research multimodal AI and low-resource NLP at the University of Florida.
-              My recent work on retrieval-augmented translation for Indigenous languages
-              won the <span className="font-semibold">AmericasNLP 2026 Shared Task</span> at
+              I research multimodal AI and low-resource NLP at the{' '}
+              <span className="font-semibold">Data Science and Research Lab</span> at the
+              University of Florida, advised by{' '}
+              <span className="font-semibold">Dr. Daisy Wang</span>. My recent work on
+              retrieval-augmented translation for Indigenous languages won the{' '}
+              <span className="font-semibold">AmericasNLP 2026 Shared Task</span> at
               ACL (San Diego) — beating every competing team. I care about building systems
               that actually work on hard, underrepresented problems: languages with little
               data, visual domains with few labels, decisions that need to be explained.
