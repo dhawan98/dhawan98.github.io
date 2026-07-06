@@ -1,11 +1,12 @@
 %-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez / modified for ATS optimization
-% License : MIT
-%------------------------
+% Aashish Dhawan — Research Scientist / ML Researcher Resume
+% Targeting: TikTok, NVIDIA, META AI, DeepMind
+% ATS-safe: no tables, no columns, no icons, pdfgentounicode=1
+%-------------------------
 
 \documentclass[letterpaper,11pt]{article}
 
+\usepackage{lmodern}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -17,11 +18,8 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage{multicol}
-\setlength{\multicolsep}{-3.0pt}
-\setlength{\columnsep}{-1pt}
-\input{glyphtounicode}
 \setlength{\footskip}{4.1pt}
+\input{glyphtounicode}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -29,28 +27,24 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Margins
-\addtolength{\oddsidemargin}{-0.6in}
-\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\oddsidemargin}{-0.60in}
+\addtolength{\evensidemargin}{-0.50in}
 \addtolength{\textwidth}{1.19in}
-\addtolength{\topmargin}{-.7in}
-\addtolength{\textheight}{1.4in}
+\addtolength{\topmargin}{-0.72in}
+\addtolength{\textheight}{1.45in}
 
 \urlstyle{same}
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Section formatting
 \titleformat{\section}{
-  \vspace{-2pt}\raggedright\bfseries\normalsize
-}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+  \vspace{-4pt}\raggedright\bfseries\normalsize
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% ATS: ensure machine-readable unicode
 \pdfgentounicode=1
 
-%-------------------------
-% Custom commands
+%--- Custom commands ---%
 \newcommand{\resumeItem}[1]{
   \item\small{{#1 \vspace{-2pt}}}
 }
@@ -60,7 +54,7 @@
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textbf{\small #2} \\
       \normalfont{\small#3} & \normalfont{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
@@ -70,21 +64,18 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 
 %-------------------------------------------
 \begin{document}
 
-%----------HEADING — plain text, no icons, fully ATS-parseable----------
+%---------- HEADING ----------
 \begin{center}
     {\Huge \scshape Aashish Dhawan} \\ \vspace{3pt}
     \small +1\,352-871-4686 $\cdot$
@@ -98,153 +89,199 @@
 %-----------SUMMARY-----------
 \section{SUMMARY}
 \vspace{2pt}
-\small{Machine Learning Engineer and PhD researcher with \textbf{5+ years} building and deploying ML systems
-across NLP, computer vision, and multimodal AI. Experienced fine-tuning large language models (LLaMA, GPT-4,
-mBART-50) with LoRA/PEFT, designing \textbf{RAG} pipelines, and shipping production-grade AI at
-\textbf{ExxonMobil} and for 5,000+ end users. Published at \textbf{ACL 2026} (shared task winner) and
-EACL 2026. Seeking Applied Scientist, ML Engineer, or Data Scientist roles.}
+\small{
+  PhD researcher (UF Data Science \& Research Lab, Advisor: Dr.\ Daisy Wang) working on LLMs,
+  multimodal AI, and retrieval systems.
+  \textbf{WMT26 and AmericasNLP 2026 shared task winner} (EMNLP + ACL).
+  Published at ACL, EACL, and EMNLP 2026.
+  Built enterprise XAI systems at ExxonMobil on a \$168M business.
+  % TODO (internship apps): add "Available: [Month Year]\,--\,[Month Year]" above.
+}
 \vspace{-6pt}
-
-%-----------SKILLS — ATS-priority order----------
-\section{SKILLS}
-\vspace{-3pt}
-\begin{itemize}[leftmargin=0.0in, label={}]
-  \small{\item{
-    \textbf{Languages:} Python, SQL, Java, C++, R \\
-    \textbf{ML Frameworks:} PyTorch, TensorFlow, Hugging Face Transformers, scikit-learn, XGBoost \\
-    \textbf{LLMs \& NLP:} GPT-4, LLaMA, Gemini, Qwen2.5-VL, mBART-50, Fine-tuning (LoRA/PEFT),
-      Retrieval-Augmented Generation (RAG), LangChain, Multilingual NLP, Low-Resource MT \\
-    \textbf{Computer Vision:} CLIP, SAM, DINO, Object Detection, Image Segmentation, Diffusion Models \\
-    \textbf{Tools \& MLOps:} FastAPI, AWS, Docker, Git, FAISS, Streamlit, Pandas, NumPy \\
-  }}
-\end{itemize}
-\vspace{-22pt}
-
-%-----------EXPERIENCE-----------
-\section{EXPERIENCE}
-\resumeSubHeadingListStart
-\vspace{-2pt}
-
-\resumeSubheading
-  {Computational Data Scientist Intern}{May 2026 -- Present}
-  {ExxonMobil}{Houston, TX}
-  \resumeItemListStart
-    \resumeItem{Developed Python XAI pipelines that generate counterfactual explanations and feature-level
-    attributions for industrial optimization models, enabling operations teams to interrogate and validate
-    model-driven decisions in production workflows.}
-    \resumeItem{Built what-if simulation tooling allowing stakeholders to perturb model inputs, evaluate
-    sensitivity of optimization outputs, and reason about model behavior without ML expertise---reducing
-    reliance on black-box predictions for high-stakes industrial decisions.}
-  \resumeItemListEnd
-\vspace{-4pt}
-
-\resumeSubheading
-  {Machine Learning Researcher}{May 2024 -- Present}
-  {Data Science \& Research Lab, University of Florida}{Gainesville, FL}
-  \resumeItemListStart
-    \resumeItem{Engineered a few-shot object detection system (CLIP + SAM + DINO + Adaptive Feature Transfer
-    + OHAC clustering) achieving \textbf{15\% accuracy improvement} over CLIP baselines in 1--10-shot regimes,
-    with interpretable concept-level visual explanations per prediction.}
-    \resumeItem{Built a production \textbf{RAG pipeline} for low-resource Indigenous language translation using
-    Qwen2.5-VL image captioning, BM25 retrieval, and Gemini 2.5 Flash many-shot prompting; system
-    \textbf{ranked 1st at AmericasNLP 2026 Shared Task (ACL)}.}
-    \resumeItem{Fine-tuned multilingual \textbf{mBART-50} with distributed data-parallel (DDP) multi-GPU
-    training, reducing training time by \textbf{50\%}; evaluated using chrF++ with full ablation studies
-    published at EACL 2026.}
-  \resumeItemListEnd
-\vspace{-4pt}
-
-\resumeSubheading
-  {Adjunct Instructor}{Aug 2023 -- Present}
-  {University of Florida}{Gainesville, FL}
-  \resumeItemListStart
-    \resumeItem{Designed and delivered Machine Learning and Programming Languages courses for
-    \textbf{300+ students} per semester; developed assignments, rubrics, and project-based evaluations.}
-    \resumeItem{Mentored capstone projects: LLM-powered chatbots, recommendation systems, and real-time
-    computer vision pipelines.}
-  \resumeItemListEnd
-\vspace{-4pt}
-
-\resumeSubheading
-  {AI Engineer, Consultant}{Aug 2023 -- Apr 2024}
-  {Atmosphere Apps}{Gainesville, FL}
-  \resumeItemListStart
-    \resumeItem{Engineered GPT-4 and Whisper-based NLP pipelines for prescription recommendation and
-    multilingual transcription, improving matching accuracy by \textbf{20\%} for \textbf{5,000+} active users.}
-    \resumeItem{Delivered audio/video transcription across 10+ languages at \textbf{95\% accuracy},
-    producing structured summaries, topic extractions, and auto-generated quizzes at scale.}
-  \resumeItemListEnd
-\vspace{-4pt}
-
-\resumeSubheading
-  {Research Assistant}{Jan 2021 -- May 2023}
-  {Graphics Imaging \& Light Measurement Lab, University of Florida}{Gainesville, FL}
-  \resumeItemListStart
-    \resumeItem{Developed deep learning pipelines for multispectral image synthesis, quantum simulation
-    acceleration, and material-scattering prediction, reducing evaluation time by up to \textbf{82\%}.}
-  \resumeItemListEnd
-\vspace{-4pt}
-
-\resumeSubheading
-  {Visiting Researcher}{Dec 2019 -- Mar 2020}
-  {UBTECH AI Lab, University of Sydney}{Sydney, Australia}
-  \resumeItemListStart
-    \resumeItem{Implemented multi-source domain adaptation (CNN backbone, shared encoder + domain-specific
-    classifiers); achieved 71--98\% accuracy across 345 categories on a 0.6M-sample dataset.}
-  \resumeItemListEnd
-\vspace{-4pt}
-
-\resumeSubheading
-  {Research Intern}{May 2019 -- Aug 2019}
-  {Space Applications Center, ISRO}{Ahmedabad, India}
-  \resumeItemListStart
-    \resumeItem{Built a CNN--CRF semantic segmentation pipeline for satellite imagery (LISS-3 + POTSDAM),
-    improving accuracy by 5\% and cutting inference from 36 hours to 0.2 seconds
-    (\textbf{648,000$\times$ speedup}).}
-  \resumeItemListEnd
-
-\resumeSubHeadingListEnd
-\vspace{-14pt}
 
 %-----------EDUCATION-----------
 \section{EDUCATION}
 \resumeSubHeadingListStart
 
-\resumeSubheading
-  {Ph.D. in Computer Science}{Aug 2025 -- May 2028 (Expected)}
-  {University of Florida}{Gainesville, FL}
+  \resumeSubheading
+    {Ph.D.\ in Computer Science}{Aug 2025 -- May 2028 (Expected)}
+    {University of Florida $\cdot$ Data Science \& Research Lab}{Gainesville, FL}
+    \resumeItemListStart
+      \resumeItem{Advisor: Dr.\ Daisy Wang \quad Research: Multimodal AI, Low-Resource NLP,
+        Retrieval-Augmented Generation}
+    \resumeItemListEnd
 
-\resumeSubheading
-  {M.S. in Computer Science}{Jan 2021 -- May 2023}
-  {University of Florida}{Gainesville, FL}
-\resumeItemListStart
-  \resumeItem{\textbf{Coursework:} Natural Language Processing, Deep Learning for Computer Graphics,
-  Trustworthy ML}
-\resumeItemListEnd
+  \resumeSubheading
+    {M.S.\ in Computer Science}{Jan 2021 -- May 2023}
+    {University of Florida}{Gainesville, FL}
 
-\resumeSubheading
-  {Bachelor of Technology in Computer Science}{Aug 2015 -- May 2019}
-  {Kurukshetra University}{Haryana, India}
+  \resumeSubheading
+    {B.Tech.\ in Computer Science}{Aug 2015 -- May 2019}
+    {Kurukshetra University}{Haryana, India}
 
 \resumeSubHeadingListEnd
-\vspace{-10pt}
+\vspace{-12pt}
 
-%-----------PUBLICATIONS (compact)-----------
+%-----------PUBLICATIONS-----------
 \section{PUBLICATIONS}
 \resumeItemListStart
-  \resumeItem{Dhawan et al. ``Retrieval-Augmented Long-Context Translation for Cultural Image Captioning.''
-  \emph{AmericasNLP @ ACL 2026.} \href{https://arxiv.org/abs/2605.20626}{arXiv:2605.20626}.
-  \textbf{[Overall Shared Task Winner]}}
-  \resumeItem{Dhawan et al. ``Improving Indigenous Language MT with Synthetic Data and Language-Specific
-  Preprocessing.'' \emph{LoResMT @ EACL 2026.}
-  \href{https://arxiv.org/abs/2601.03135}{arXiv:2601.03135}.}
-  \resumeItem{Driggers-Ellis, \ldots, Dhawan et al. ``MultiScript30k: Multilingual Embeddings for
-  Cross-Script Parallel Data.'' \href{https://arxiv.org/abs/2512.11074}{arXiv:2512.11074}.
-  \emph{Under review, ACL Rolling Review.}}
-  \resumeItem{Dhawan et al. ``Post Processing of Image Segmentation Using CRF.''
-  \emph{IEEE INDIACom}, 2019.}
+
+  \resumeItem{\textbf{Dhawan et al.}
+    ``BM25-Augmented Many-Shot Translation for Low-Resource North-Eastern Indian Languages.''
+    \emph{WMT26 Indic MT Shared Task @ EMNLP 2026, Budapest.}
+    \textbf{[Shared Task Winner]}}
+
+  \resumeItem{\textbf{Dhawan et al.}
+    ``Retrieval-Augmented Long-Context Translation for Cultural Image Captioning.''
+    \emph{AmericasNLP @ ACL 2026, San Diego.}
+    \href{https://aclanthology.org/2026.americasnlp-6.19/}{ACL Anthology}.
+    \textbf{[1st Place, Overall Shared Task]}}
+
+  \resumeItem{\textbf{Dhawan et al.}
+    ``Improving Indigenous Language Machine Translation with Synthetic Data
+    and Language-Specific Preprocessing.''
+    \emph{LoResMT @ EACL 2026.}
+    \href{https://aclanthology.org/2026.loresmt-1.10/}{ACL Anthology}.}
+
+  \resumeItem{Driggers-Ellis, \ldots, \textbf{Dhawan} et al.\
+    ``MultiScript30k: Multilingual Embeddings for Cross-Script Parallel Data.''
+    \href{https://arxiv.org/abs/2512.11074}{arXiv:2512.11074}. \emph{Under review, ACL ARR.}}
+
+  \resumeItem{\textbf{Dhawan et al.}
+    ``Post Processing of Image Segmentation Using CRF.''
+    \emph{IEEE INDIACom}, 2019.}
+
 \resumeItemListEnd
-\vspace{-14pt}
+\vspace{-12pt}
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+\resumeSubHeadingListStart
+
+%-- ExxonMobil --%
+\resumeSubheading
+  {Computational Data Scientist Intern}{May 2026 -- Present}
+  {ExxonMobil}{Houston, TX}
+  \resumeItemListStart
+    \resumeItem{Built a production ML explainability platform for a
+      \textbf{\$168M demand forecasting business}, addressing a core challenge:
+      operations teams did not trust AI recommendations. LightGBM models with
+      SHAP, LIME, counterfactual, and drift-detection analysis translate
+      predictions into verified plain-English narratives. Beat the incumbent
+      forecaster by \textbf{5.4 pp MAPE} (20.9\% to 15.4\%) on 970 held-out samples.}
+    \resumeItem{Designed an explainability framework from scratch for LP and
+      MILP optimization decisions (Gurobi, Pyomo/IPOPT),
+      covering which constraints are binding, why an option was not chosen,
+      and how outputs shift when a limit is relaxed. A built-in verification
+      layer only surfaces claims it can prove from the solver output.}
+    \resumeItem{Red-teamed both tools with adversarial inputs to confirm
+      explanations cannot be coerced into fabricating numbers. Built both
+      with a plug-in model interface so they extend to other product lines,
+      teams, and use cases across the organization.}
+  \resumeItemListEnd
+\vspace{-2pt}
+
+%-- DSR Lab --%
+\resumeSubheading
+  {Machine Learning Researcher}{May 2024 -- Present}
+  {Data Science \& Research Lab, University of Florida}{Gainesville, FL}
+  \resumeItemListStart
+    \resumeItem{Built a generalizable \textbf{BM25 + many-shot RAG translation pipeline}
+      that won \textbf{two shared tasks with the same core architecture}:
+      WMT26 Indic MT (without images, EMNLP 2026) and AmericasNLP 2026
+      (with Qwen2.5-VL multimodal captioning, ACL 2026),
+      showing that retrieval-augmented few-shot prompting transfers across
+      low-resource language families and modalities.}
+    \resumeItem{Fine-tuned multilingual \textbf{mBART-50} with distributed data-parallel
+      (DDP) multi-GPU training, reducing training time by \textbf{50\%}; chrF++ evaluation
+      across full ablation study published at EACL 2026.}
+    \resumeItem{Engineered a few-shot object detection system for low-resource visual domains
+      (CLIP + SAM + DINO + Adaptive Feature Transfer + OHAC clustering),
+      achieving \textbf{15\% accuracy gain} over CLIP zero-shot with
+      concept-level visual explanations per prediction.}
+  \resumeItemListEnd
+\vspace{-2pt}
+
+%-- Instructor --%
+\resumeSubheading
+  {Adjunct Instructor}{Aug 2023 -- Present}
+  {University of Florida}{Gainesville, FL}
+  \resumeItemListStart
+    \resumeItem{Designed and delivered Machine Learning and Programming Languages to
+      \textbf{300+ students/semester}; led 5+ TAs; mentored capstone projects in
+      LLM chatbots, real-time computer vision, and recommendation systems.}
+  \resumeItemListEnd
+\vspace{-2pt}
+
+%-- Atmosphere Apps --%
+\resumeSubheading
+  {AI Engineer / Consultant}{Aug 2023 -- Apr 2024}
+  {Atmosphere Apps}{Gainesville, FL}
+  \resumeItemListStart
+    \resumeItem{Engineered GPT-4 and Whisper NLP pipelines for multilingual transcription and
+      prescription recommendation; \textbf{95\% accuracy} across 10+ languages for
+      \textbf{5,000+ active users}.}
+  \resumeItemListEnd
+\vspace{-2pt}
+
+%-- GIL Lab --%
+\resumeSubheading
+  {Graduate Research Assistant}{Jan 2021 -- May 2023}
+  {Graphics Imaging \& Light Measurement Lab, University of Florida}{Gainesville, FL}
+  \resumeItemListStart
+    \resumeItem{Deep learning pipelines for multispectral image synthesis (ProGAN),
+      neural quantum simulation (\textbf{82\% compute reduction}), and material
+      scattering prediction via differentiable rendering.}
+  \resumeItemListEnd
+\vspace{-2pt}
+
+%-- Sydney --%
+\resumeSubheading
+  {Visiting Researcher}{Dec 2019 -- Mar 2020}
+  {UBTECH AI Lab, University of Sydney}{Sydney, Australia}
+  \resumeItemListStart
+    \resumeItem{Multi-source domain adaptation (CNN + GRL adversarial training + moment
+      matching); 71--98\% accuracy across 345 classes on a 600k-sample benchmark.
+      Advisor: Prof.\ Dacheng Tao.}
+  \resumeItemListEnd
+\vspace{-2pt}
+
+%-- ISRO --%
+\resumeSubheading
+  {Research Intern}{May 2019 -- Aug 2019}
+  {Space Applications Center, ISRO}{Ahmedabad, India}
+  \resumeItemListStart
+    \resumeItem{CNN-CRF satellite segmentation pipeline (LISS-3 + POTSDAM);
+      \textbf{648,000$\times$ speedup} (36\,h $\to$ 0.2\,s). Published IEEE INDIACom 2019.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------SKILLS-----------
+\section{SKILLS}
+\vspace{-3pt}
+\begin{itemize}[leftmargin=0.0in, label={}]
+  \small{\item{
+    \textbf{Languages:} Python, SQL, Java, C++, R \\
+    \textbf{LLMs \& Generative AI:}
+      GPT-4, LLaMA, Gemini 2.5, Qwen2.5-VL, mBART-50,
+      Fine-tuning (LoRA/PEFT), RAG, LangChain, Prompt Engineering \\
+    \textbf{Multimodal \& Vision:}
+      CLIP, mCLIP, SAM, DINO, Diffusion Models, Vision-Language Models,
+      Object Detection, Image Segmentation \\
+    \textbf{Search \& Retrieval:}
+      BM25, FAISS, Dense Retrieval, Vector Search, Semantic Chunking \\
+    \textbf{ML Frameworks:}
+      PyTorch (DDP multi-GPU), TensorFlow, Hugging Face Transformers,
+      scikit-learn, LightGBM, XGBoost \\
+    \textbf{Explainable AI:}
+      SHAP, LIME, Counterfactual Explanations, Partial Dependence Plots \\
+    \textbf{Tools \& MLOps:}
+      FastAPI, MCP, AWS, Docker, Git, Gurobi, Streamlit, Pandas, NumPy \\
+  }}
+\end{itemize}
+\vspace{-18pt}
 
 %-----------SELECTED PROJECTS-----------
 \section{SELECTED PROJECTS}
@@ -252,37 +289,27 @@ EACL 2026. Seeking Applied Scientist, ML Engineer, or Data Scientist roles.}
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-  {\textbf{Explainable Few-Shot Object Detection (Indigenous Manuscripts)}
-   $|$ \emph{PyTorch, CLIP, SAM, DINO, FastAPI}}{2025}
+  {\textbf{Generalizable RAG Translation Pipeline}
+   $|$ \emph{BM25, Qwen2.5-VL, Gemini 2.5 Flash, Python}}{2025--26}
 \resumeItemListStart
 \vspace{2pt}
-\resumeItem{Concept-based few-shot detection for Mixtec manuscripts using CLIP, SAM, DINO, and Adaptive
-Feature Transfer; \textbf{15\% accuracy gain} over CLIP with hierarchical visual explanations per
-prediction served via a FastAPI inference backend.}
+\resumeItem{One architecture, two competition wins: BM25 retrieval + many-shot LLM prompting won
+  \textbf{WMT26 Indic MT} (EMNLP); adding Qwen2.5-VL image captioning won
+  \textbf{AmericasNLP 2026} (ACL) for cultural image translation.
+  \href{https://github.com/dhawan98/mBART50-extended}{github.com/dhawan98/mBART50-extended}}
 \resumeItemListEnd
 
-\vspace{-16pt}
+\vspace{-12pt}
 
 \resumeProjectHeading
-  {\textbf{RAGFlow: Documentation Assistant}
-   $|$ \emph{Python, FastAPI, OpenAI API, FAISS, LangChain}}{2025}
+  {\textbf{Explainable Few-Shot Detection for Low-Resource Domains}
+   $|$ \emph{PyTorch, CLIP, SAM, DINO}}{2025}
 \resumeItemListStart
 \vspace{2pt}
-\resumeItem{Built a \textbf{retrieval-augmented generation (RAG)} assistant using FAISS vector search,
-semantic chunking, and GPT-based response generation; served via FastAPI with sub-second retrieval
-latency.}
-\resumeItemListEnd
-
-\vspace{-16pt}
-
-\resumeProjectHeading
-  {\textbf{Autonomous Job Application Agent}
-   $|$ \emph{Python, FastAPI, Gemini, PostgreSQL, Streamlit}}{2025}
-\resumeItemListStart
-\vspace{2pt}
-\resumeItem{End-to-end AI agent that scrapes job listings, scores role fit with \textbf{Gemini},
-generates tailored cover letters via LLM prompting, and automates application submissions through a
-PostgreSQL-backed pipeline.}
+\resumeItem{Concept-driven detector for indigenous manuscript glyphs: CLIP + SAM + DINO +
+  Adaptive Feature Transfer + OHAC clustering;
+  \textbf{15\% accuracy gain} over CLIP zero-shot with hierarchical concept-level
+  explanations served via FastAPI.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
