@@ -20,7 +20,7 @@ const experiences: ExperienceProps[] = [
     year: 'May 2026 – Aug 2026',
     description: [
       'Beat the incumbent demand forecaster by 5.4 pp MAPE (20.9% → 15.4%) and shipped it as a reusable production explainability asset — LightGBM with SHAP, LIME, counterfactual, and drift-detection analysis translating predictions into verified plain-English narratives.',
-      'Designed an explainability framework from scratch for LP and MILP optimization decisions (Gurobi, Pyomo/IPOPT), with a verification layer that only surfaces claims it can prove from the solver output.',
+      'Built an explainability framework from scratch for the LP and MILP optimization behind the same demand forecasting business (Gurobi, Pyomo/IPOPT): which constraints bind, why an option was not chosen, and how outputs shift when a limit is relaxed, with a verification layer that surfaces only claims it can prove from solver output.',
       'Red-teamed both tools with adversarial inputs to confirm explanations cannot be coerced into fabricating numbers; built on a plug-in model interface so they extend to other product lines and teams.',
     ],
     icon: <FaBriefcase className="text-white" />
