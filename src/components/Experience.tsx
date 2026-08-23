@@ -17,10 +17,10 @@ const experiences: ExperienceProps[] = [
   {
     role: 'Computational Data Scientist Intern',
     company: 'ExxonMobil · Houston, TX',
-    year: 'May 2026 – Present',
+    year: 'May 2026 – Aug 2026',
     description: [
-      'Building explainable AI (XAI) workflows that translate model outputs, optimization results, and operational constraints into plain-English explanations for non-technical stakeholders.',
-      'Developing Python-based XAI tooling to probe model behavior and support "why," "what changed," and "what-if" reasoning in live operational workflows.',
+      'Built explainable AI (XAI) workflows that translated model outputs, optimization results, and operational constraints into plain-English explanations for non-technical stakeholders on a $168M demand forecasting business.',
+      'Developed Python-based XAI tooling to probe model behavior and support "why," "what changed," and "what-if" reasoning in live operational workflows; beat the incumbent forecaster by 5.4 pp MAPE.',
     ],
     icon: <FaBriefcase className="text-white" />
   },

@@ -36,9 +36,9 @@ const Bio: React.FC = () => {
               data, visual domains with few labels, decisions that need to be explained.
             </p>
             <p className="leading-relaxed mb-8">
-              Before my PhD I built production AI at ExxonMobil, shipped LLM pipelines for
-              5,000+ users at a health-tech startup, and ran experiments at ISRO and the
-              University of Sydney. I teach ML and Programming Languages at UF and have
+              I spent summer 2026 building production explainable-AI systems at ExxonMobil in
+              Houston, and before my PhD I shipped LLM pipelines for 5,000+ users at a
+              health-tech startup and ran experiments at ISRO and the University of Sydney. I teach ML and Programming Languages at UF and have
               mentored 300+ students on projects ranging from AI chatbots to real-time
               computer vision. I like problems at the edge of what models can currently do.
             </p>
