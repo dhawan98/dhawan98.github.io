@@ -19,8 +19,9 @@ const experiences: ExperienceProps[] = [
     company: 'ExxonMobil · Houston, TX',
     year: 'May 2026 – Aug 2026',
     description: [
-      'Built explainable AI (XAI) workflows that translated model outputs, optimization results, and operational constraints into plain-English explanations for non-technical stakeholders on a $168M demand forecasting business.',
-      'Developed Python-based XAI tooling to probe model behavior and support "why," "what changed," and "what-if" reasoning in live operational workflows; beat the incumbent forecaster by 5.4 pp MAPE.',
+      'Beat the incumbent demand forecaster by 5.4 pp MAPE (20.9% → 15.4%) and shipped it as a reusable production explainability asset — LightGBM with SHAP, LIME, counterfactual, and drift-detection analysis translating predictions into verified plain-English narratives.',
+      'Designed an explainability framework from scratch for LP and MILP optimization decisions (Gurobi, Pyomo/IPOPT), with a verification layer that only surfaces claims it can prove from the solver output.',
+      'Red-teamed both tools with adversarial inputs to confirm explanations cannot be coerced into fabricating numbers; built on a plug-in model interface so they extend to other product lines and teams.',
     ],
     icon: <FaBriefcase className="text-white" />
   },
@@ -31,7 +32,7 @@ const experiences: ExperienceProps[] = [
     description: [
       'Built a few-shot object detection pipeline (CLIP + SAM + DINO + Adaptive Feature Transfer + OHAC) that improved accuracy by 15% over CLIP baselines while preserving concept-level visual explanations.',
       'Developed a retrieval-augmented long-context translation system for low-resource Indigenous languages using Qwen2.5-VL, BM25, and Gemini 2.5 Flash — system won the AmericasNLP 2026 Shared Task at ACL.',
-      'Fine-tuned multilingual mBART-50 with multi-GPU DDP training, reducing training time by 50% and producing publication-ready ablations and chrF++ evaluation pipelines.',
+      'Fine-tuned multilingual mBART-50 with distributed data-parallel (DDP) multi-GPU training, cutting iteration time enough to run a full ablation study with chrF++ evaluation — published at EACL 2026.',
     ],
     icon: <FaUniversity className="text-white" />
   },
@@ -78,7 +79,7 @@ const experiences: ExperienceProps[] = [
     company: 'Space Applications Center, ISRO · Ahmedabad, India',
     year: 'May 2019 – Aug 2019',
     description: [
-      'Developed a CNN–CRF satellite image segmentation pipeline on LISS-3 and POTSDAM datasets; improved segmentation accuracy by 5% and cut inference time from 36 hours to 0.2 seconds (648,000× speedup).',
+      'Developed a CNN–CRF satellite image segmentation pipeline on LISS-3 and POTSDAM datasets, replacing a 36-hour CRF post-processing stage with a 0.2s learned approximation while improving segmentation accuracy by 5%.',
     ],
     icon: <FaRobot className="text-white" />
   }
