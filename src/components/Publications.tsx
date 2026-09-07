@@ -1,6 +1,7 @@
 // src/components/Publications.tsx
 import React from 'react';
-import { ExternalLink, FileText } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ExternalLink, FileText, ArrowRight } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 import { cn } from '@/lib/utils';
 
@@ -14,6 +15,8 @@ interface PublicationProps {
   articleUrl?: string;
   codeUrl?: string;
   image?: string;
+  /** when set, the publication links to an internal project page at /papers/:slug */
+  pageSlug?: string;
   className?: string;
 }
 
@@ -26,6 +29,7 @@ const Publication: React.FC<PublicationProps> = ({
   paperUrl,
   articleUrl,
   codeUrl,
+  pageSlug,
   className
 }) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
@@ -37,7 +41,18 @@ const Publication: React.FC<PublicationProps> = ({
         className
       )}
     >
-      <h3 className="text-xl font-medium text-foreground mb-2">{title}</h3>
+      <h3 className="text-xl font-medium text-foreground mb-2">
+        {pageSlug ? (
+          <Link
+            to={`/papers/${pageSlug}`}
+            className="transition-colors hover:text-primary"
+          >
+            {title}
+          </Link>
+        ) : (
+          title
+        )}
+      </h3>
       <p className="text-muted-foreground mb-4">{authors}</p>
       <div className="flex flex-wrap items-center gap-2 mb-4">
         <span className="font-medium text-foreground">{conference}</span>
@@ -63,18 +78,29 @@ const Publication: React.FC<PublicationProps> = ({
         </div>
       )}
 
-      <div className="flex flex-wrap gap-4 mt-4">
-        {paperUrl && (
-          <a
-            href={paperUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-sm hover-underline"
-            aria-label={`Read paper: ${title}`}
+      <div className="flex flex-wrap items-center gap-4 mt-4">
+        {pageSlug ? (
+          <Link
+            to={`/papers/${pageSlug}`}
+            className="group inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary transition-all hover:bg-primary/10"
+            aria-label={`View project page: ${title}`}
           >
-            <FileText size={16} />
-            <span>Read Paper</span>
-          </a>
+            <span>View project page</span>
+            <ArrowRight size={15} className="transition-transform group-hover:translate-x-0.5" />
+          </Link>
+        ) : (
+          paperUrl && (
+            <a
+              href={paperUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-sm hover-underline"
+              aria-label={`Read paper: ${title}`}
+            >
+              <FileText size={16} />
+              <span>Read Paper</span>
+            </a>
+          )
         )}
 
         {articleUrl && (
@@ -90,7 +116,7 @@ const Publication: React.FC<PublicationProps> = ({
           </a>
         )}
 
-        {codeUrl && (
+        {!pageSlug && codeUrl && (
           <a
             href={codeUrl}
             target="_blank"
@@ -111,11 +137,11 @@ const researchPublications: PublicationProps[] = [
   {
     title: "BM25-Augmented Many-Shot Translation for Low-Resource North-Eastern Indian Languages",
     authors: "Aashish Dhawan, Christopher Driggers-Ellis, Dzmitry Kasinets, Christan Grant, Daisy Zhe Wang",
-    conference: "Eleventh Conference on Machine Translation (WMT) @ EMNLP 2026, Budapest",
+    conference: "WMT26 @ EMNLP 2026, Budapest",
     year: "2026",
-    abstract: "The University of Florida Gators submission to the WMT26 Low-Resource Indic Language Translation shared task. We adapt the retrieval-augmented many-shot translation pipeline from our AmericasNLP 2026 system to translate between English and eleven North-Eastern Indian languages in both directions. At inference time, BM25 retrieves the most similar parallel examples from a language-specific training bank and Gemini 2.5 Flash translates the input conditioned on those examples, with no model fine-tuning. Training banks combine official WMT26 data with public corpora such as Samanantar and prior WMT shared task releases, and a grid search over retrieval count and development exemplar count selects the best configuration for each of the 22 language directions. The submission was a top-performing system in the shared task.",
+    abstract: "Presented at EMNLP 2026 in Budapest, this WMT26 shared-task system adapts a retrieval-augmented many-shot translation pipeline for English and eleven North-Eastern Indian languages, finishing #1 in 10 directions and #2 in 8 more across the primary leaderboards.",
     paperUrl: "https://arxiv.org/abs/2608.13722",
-    codeUrl: "https://github.com/dhawan98/Gators_wmt26"
+    pageSlug: "wmt26-northeastern-indian-translation"
   },
   {
     title: "Retrieval-Augmented Long-Context Translation for Cultural Image Captioning: Gators submission for AmericasNLP 2026 shared task",
@@ -124,7 +150,8 @@ const researchPublications: PublicationProps[] = [
     year: "2026",
     abstract: "We present the University of Florida Gators submission to the AmericasNLP 2026 shared task on cultural image captioning for Indigenous languages. Our system uses a two-stage pipeline that generates Spanish intermediate captions with Qwen2.5-VL, then produces target-language captions using retrieval-augmented many-shot prompting with Gemini 2.5 Flash. The submission was the overall winner of the shared task.",
     paperUrl: "https://arxiv.org/abs/2605.20626",
-    codeUrl: "https://github.com/dhawan98/AmericasNLP2026-Gators-Submission"
+    codeUrl: "https://github.com/dhawan98/AmericasNLP2026-Gators-Submission",
+    pageSlug: "americasnlp-2026"
   },
   {
     title: "Improving Indigenous Language Machine Translation with Synthetic Data and Language-Specific Preprocessing",
@@ -133,7 +160,8 @@ const researchPublications: PublicationProps[] = [
     year: "2026",
     abstract: "We improve low-resource Indigenous MT via synthetic parallel data augmentation, language-specific normalization, and multilingual mBART fine-tuning measured by chrF++.",
     paperUrl: "https://arxiv.org/abs/2601.03135",
-    codeUrl: "https://github.com/dhawan98/mBART50-extended"
+    codeUrl: "https://github.com/dhawan98/mBART50-extended",
+    pageSlug: "indigenous-mt-synthetic"
   },
   {
     title: "MultiScript30k: Leveraging Multilingual Embeddings to Extend Cross Script Parallel Data",
@@ -150,8 +178,9 @@ const researchPublications: PublicationProps[] = [
     conference: "INDIACom",
     year: "2019",
     abstract: "Evaluated various CRFs to enhance segmentation clarity on satellite imagery.",
-    paperUrl: "https://ieeexplore.ieee.org/document/8991232",
-    codeUrl: "https://github.com/dhawan98/Post-Processing-of-Image-Segmentation-using-CRF"
+    paperUrl: "https://arxiv.org/abs/2510.09833",
+    codeUrl: "https://github.com/dhawan98/Post-Processing-of-Image-Segmentation-using-CRF",
+    pageSlug: "crf-segmentation"
   },
   {
     title: "A Review on Domain Adaptation and Generative Adversarial Networks",
