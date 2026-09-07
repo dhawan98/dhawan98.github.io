@@ -109,6 +109,15 @@ const Publication: React.FC<PublicationProps> = ({
 
 const researchPublications: PublicationProps[] = [
   {
+    title: "BM25-Augmented Many-Shot Translation for Low-Resource North-Eastern Indian Languages",
+    authors: "Aashish Dhawan, Christopher Driggers-Ellis, Dzmitry Kasinets, Christan Grant, Daisy Zhe Wang",
+    conference: "Eleventh Conference on Machine Translation (WMT) @ EMNLP 2026, Budapest",
+    year: "2026",
+    abstract: "The University of Florida Gators submission to the WMT26 Low-Resource Indic Language Translation shared task. We adapt the retrieval-augmented many-shot translation pipeline from our AmericasNLP 2026 system to translate between English and eleven North-Eastern Indian languages in both directions. At inference time, BM25 retrieves the most similar parallel examples from a language-specific training bank and Gemini 2.5 Flash translates the input conditioned on those examples, with no model fine-tuning. Training banks combine official WMT26 data with public corpora such as Samanantar and prior WMT shared task releases, and a grid search over retrieval count and development exemplar count selects the best configuration for each of the 22 language directions. The submission was the best system of the shared task.",
+    paperUrl: "https://arxiv.org/abs/2608.13722",
+    codeUrl: "https://github.com/dhawan98/Gators_wmt26"
+  },
+  {
     title: "Retrieval-Augmented Long-Context Translation for Cultural Image Captioning: Gators submission for AmericasNLP 2026 shared task",
     authors: "Aashish Dhawan, Christopher Driggers-Ellis, Dzmitry Kasinets, Daisy Zhe Wang, Christan Grant",
     conference: "6th Workshop on NLP for Indigenous Languages of the Americas (AmericasNLP) @ ACL 2026",
