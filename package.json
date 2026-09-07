@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "touch dist/.nojekyll && cp dist/index.html dist/404.html",
+    "postbuild": "touch dist/.nojekyll && cp dist/index.html dist/404.html && node scripts/prerender.mjs",
     "preview": "vite preview",
     "deploy": "npm run build && npm run postbuild && gh-pages -d dist"
   },
