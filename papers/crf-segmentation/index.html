@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://images.unsplash.com; font-src 'self'; connect-src 'self' ws: wss:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>Post Processing of Image Segmentation using Conditional Random Fields · Aashish Dhawan</title>
+    <meta name="description" content="Aashish Dhawan, Pankaj Bodani, Vishal Garg — a study of Conditional Random Field post-processing for image segmentation across satellite and aerial imagery." />
+    <meta
+      name="keywords"
+      content="Aashish Dhawan, PhD student, University of Florida, Data Science and Research Lab, Dr. Daisy Wang, machine learning researcher, NLP researcher, multimodal AI, low-resource NLP, computer vision, AmericasNLP, ACL 2026, AI researcher, ML engineer, applied scientist"
+    />
+    <meta name="author" content="Aashish Dhawan" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://dhawan98.github.io/papers/crf-segmentation/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://dhawan98.github.io/papers/crf-segmentation/" />
+    <meta property="og:site_name" content="Aashish Dhawan" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Post Processing of Image Segmentation using Conditional Random Fields · Aashish Dhawan" />
+    <meta property="og:description" content="Aashish Dhawan, Pankaj Bodani, Vishal Garg — a study of Conditional Random Field post-processing for image segmentation across satellite and aerial imagery." />
+    <meta property="og:image" content="https://dhawan98.github.io/profile.png" />
+    <meta property="og:image:alt" content="Aashish Dhawan — PhD Researcher at University of Florida" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Post Processing of Image Segmentation using Conditional Random Fields · Aashish Dhawan" />
+    <meta name="twitter:description" content="Aashish Dhawan, Pankaj Bodani, Vishal Garg — a study of Conditional Random Field post-processing for image segmentation across satellite and aerial imagery." />
+    <meta name="twitter:image" content="https://dhawan98.github.io/profile.png" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Post Processing of Image Segmentation using Conditional Random Fields",
+  "name": "Post Processing of Image Segmentation using Conditional Random Fields",
+  "abstract": "Conditional Random Fields (CRFs) are a common post-processing step for sharpening the boundaries of image segmentation maps. We investigate how different CRF formulations affect segmentation clarity, evaluating them on two contrasting datasets: lower-quality satellite imagery and high-quality aerial photographs. By comparing performance across image-quality regimes, we identify which CRF variant works best in each setting and characterize the strengths and limitations of each approach.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Aashish Dhawan",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "JMIETI, Radaur, India"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Pankaj Bodani",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "JMIETI, Radaur, India"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Vishal Garg",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "JMIETI, Radaur, India"
+      }
+    }
+  ],
+  "datePublished": "2025",
+  "publisher": "arXiv 2025 · orig. INDIACom 2019",
+  "url": "https://dhawan98.github.io/papers/crf-segmentation/",
+  "keywords": [
+    "computer vision",
+    "image segmentation",
+    "conditional random fields",
+    "remote sensing"
+  ],
+  "sameAs": "https://arxiv.org/abs/2510.09833"
+}
+    </script>
+    <script type="module" crossorigin src="/assets/index-BMCqQpHF.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BKAr3Wwn.css">
+  </head>
+
+  <body>
+    <div id="root">
+      <!-- Fallback content for crawlers before React hydrates -->
+            <noscript>
+        <h1>Post Processing of Image Segmentation using Conditional Random Fields</h1>
+        <p>Aashish Dhawan, Pankaj Bodani, Vishal Garg</p>
+        <p>arXiv 2025 · orig. INDIACom 2019 · 2025</p>
+        <h2>Abstract</h2>
+        <p>Conditional Random Fields (CRFs) are a common post-processing step for sharpening the boundaries of image segmentation maps. We investigate how different CRF formulations affect segmentation clarity, evaluating them on two contrasting datasets: lower-quality satellite imagery and high-quality aerial photographs. By comparing performance across image-quality regimes, we identify which CRF variant works best in each setting and characterize the strengths and limitations of each approach.</p>
+        <h2>Overview</h2>
+        <p>Segmentation models often produce maps with ragged or uncertain boundaries. CRFs refine these maps by encouraging label agreement between similar, nearby pixels. We evaluate several CRF formulations — linear, grid, and fully-connected (dense) — and ask a practical question: which one to reach for given the quality of the input imagery?</p>
+        <p>Testing across satellite and aerial datasets — deliberately different in resolution and noise — surfaces clear trade-offs and shows that the best-performing CRF variant is not the same across image-quality regimes.</p>
+        <h2>Results</h2>
+        <p>Sweeping the fully-connected CRF's negative-probability parameter progressively cleans up the segmentation: clutter is removed and object boundaries — the bus, the car, the tree canopy — sharpen as the setting increases from 80% to 99%.</p>
+        <ul>
+          <li>arxiv: https://arxiv.org/abs/2510.09833</li>
+          <li>pdf: https://arxiv.org/pdf/2510.09833</li>
+          <li>code: https://github.com/dhawan98/Post-Processing-of-Image-Segmentation-using-CRF</li>
+        </ul>
+        <p><a href="https://dhawan98.github.io/">Back to Aashish Dhawan's site</a></p>
+      </noscript>
+    </div>
+  </body>
+</html>

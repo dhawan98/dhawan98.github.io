@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://images.unsplash.com; font-src 'self'; connect-src 'self' ws: wss:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>Retrieval-Augmented Long-Context Translation for Cultural Image Captioning · Aashish Dhawan</title>
+    <meta name="description" content="Aashish Dhawan et al. — the University of Florida Gators submission that won the AmericasNLP 2026 shared task on cultural image captioning for Indigenous languages." />
+    <meta
+      name="keywords"
+      content="Aashish Dhawan, PhD student, University of Florida, Data Science and Research Lab, Dr. Daisy Wang, machine learning researcher, NLP researcher, multimodal AI, low-resource NLP, computer vision, AmericasNLP, ACL 2026, AI researcher, ML engineer, applied scientist"
+    />
+    <meta name="author" content="Aashish Dhawan" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://dhawan98.github.io/papers/americasnlp-2026/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://dhawan98.github.io/papers/americasnlp-2026/" />
+    <meta property="og:site_name" content="Aashish Dhawan" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Retrieval-Augmented Long-Context Translation for Cultural Image Captioning · Aashish Dhawan" />
+    <meta property="og:description" content="Aashish Dhawan et al. — the University of Florida Gators submission that won the AmericasNLP 2026 shared task on cultural image captioning for Indigenous languages." />
+    <meta property="og:image" content="https://dhawan98.github.io/profile.png" />
+    <meta property="og:image:alt" content="Aashish Dhawan — PhD Researcher at University of Florida" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Retrieval-Augmented Long-Context Translation for Cultural Image Captioning · Aashish Dhawan" />
+    <meta name="twitter:description" content="Aashish Dhawan et al. — the University of Florida Gators submission that won the AmericasNLP 2026 shared task on cultural image captioning for Indigenous languages." />
+    <meta name="twitter:image" content="https://dhawan98.github.io/profile.png" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Retrieval-Augmented Long-Context Translation for Cultural Image Captioning",
+  "name": "Retrieval-Augmented Long-Context Translation for Cultural Image Captioning",
+  "abstract": "We present the University of Florida (Gators) submission to the AmericasNLP 2026 shared task on cultural image captioning for Indigenous languages. Our system uses a two-stage pipeline: it first generates a Spanish intermediate caption for each image with Qwen2.5-VL, then produces the target-language caption via retrieval-augmented, many-shot prompting with Gemini 2.5 Flash. Retrieval surfaces culturally and visually relevant in-context examples, letting a general-purpose LLM translate into low-resource languages it was never explicitly trained on. On the development set the approach improves over the shared-task baseline by 164.1%, 131.7%, and 122.6% for the three language variants, with sustained improvements exceeding 150% on the evaluation set. We find that retrieval effectiveness varies substantially by language and depends on having a sufficiently large in-domain example pool, and that language-specific synthetic data contributes roughly 28 chrF++ points to Guaraní. Our submission was the overall winner of the shared task and ranked second in human evaluation among finalist entries.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Aashish Dhawan",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "University of Florida"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Christopher Driggers-Ellis",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "University of Florida"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Dzmitry Kasinets",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "University of Florida"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Daisy Zhe Wang",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "University of Florida"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Christan Grant",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "University of Florida"
+      }
+    }
+  ],
+  "datePublished": "2026",
+  "publisher": "AmericasNLP 2026 · ACL",
+  "url": "https://dhawan98.github.io/papers/americasnlp-2026/",
+  "keywords": [
+    "low-resource NLP",
+    "Indigenous languages",
+    "retrieval-augmented generation",
+    "image captioning",
+    "machine translation"
+  ],
+  "sameAs": "https://arxiv.org/abs/2605.20626"
+}
+    </script>
+    <script type="module" crossorigin src="/assets/index-BMCqQpHF.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BKAr3Wwn.css">
+  </head>
+
+  <body>
+    <div id="root">
+      <!-- Fallback content for crawlers before React hydrates -->
+            <noscript>
+        <h1>Retrieval-Augmented Long-Context Translation for Cultural Image Captioning</h1>
+        <p>Aashish Dhawan, Christopher Driggers-Ellis, Dzmitry Kasinets, Daisy Zhe Wang, Christan Grant</p>
+        <p>AmericasNLP 2026 · ACL · 2026</p>
+        <p>1st place overall — AmericasNLP 2026 Shared Task on Cultural Image Captioning</p>
+        <h2>Abstract</h2>
+        <p>We present the University of Florida (Gators) submission to the AmericasNLP 2026 shared task on cultural image captioning for Indigenous languages. Our system uses a two-stage pipeline: it first generates a Spanish intermediate caption for each image with Qwen2.5-VL, then produces the target-language caption via retrieval-augmented, many-shot prompting with Gemini 2.5 Flash. Retrieval surfaces culturally and visually relevant in-context examples, letting a general-purpose LLM translate into low-resource languages it was never explicitly trained on. On the development set the approach improves over the shared-task baseline by 164.1%, 131.7%, and 122.6% for the three language variants, with sustained improvements exceeding 150% on the evaluation set. We find that retrieval effectiveness varies substantially by language and depends on having a sufficiently large in-domain example pool, and that language-specific synthetic data contributes roughly 28 chrF++ points to Guaraní. Our submission was the overall winner of the shared task and ranked second in human evaluation among finalist entries.</p>
+        <h2>Method</h2>
+        <p>Rather than fine-tune a captioning model on scarce Indigenous-language data, we decompose the task into two stages that each play to a strong general-purpose model. In the first stage, Qwen2.5-VL looks at the image and produces a faithful Spanish caption — a high-resource pivot the vision-language model handles reliably.</p>
+        <p>In the second stage, we translate that caption into the target Indigenous language with Gemini 2.5 Flash using retrieval-augmented, many-shot prompting. For each input we retrieve the most relevant caption pairs from an in-domain example pool and pack them into a long-context prompt, letting the model translate into languages it was never explicitly trained on by analogy to nearby examples.</p>
+        <h2>Results</h2>
+        <p>The system improves over the shared-task baseline by 164.1%, 131.7%, and 122.6% across the three language variants on the development set, with improvements above 150% carried over to the held-out evaluation set. It was the overall winner of the shared task and placed second in the human evaluation among finalist entries.</p>
+        <p>Two findings stood out. Retrieval effectiveness is highly language-dependent and hinges on a sufficiently large in-domain pool of examples to retrieve from. And targeted synthetic data matters: language-specific augmentation contributed roughly 28 chrF++ points for Guaraní.</p>
+        <ul>
+          <li>arxiv: https://arxiv.org/abs/2605.20626</li>
+          <li>pdf: https://arxiv.org/pdf/2605.20626</li>
+          <li>code: https://github.com/dhawan98/AmericasNLP2026-Gators-Submission</li>
+        </ul>
+        <p><a href="https://dhawan98.github.io/">Back to Aashish Dhawan's site</a></p>
+      </noscript>
+    </div>
+  </body>
+</html>
